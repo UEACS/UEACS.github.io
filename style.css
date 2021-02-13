@@ -89,10 +89,6 @@ header nav {
 	margin-top: 10px
 }
 
-header a: hover {
-	color: #cccccc;
-	font-weight: normal;
-}
 
 header a:active {
 	color: #361999;
@@ -100,11 +96,11 @@ header a:active {
 
 
 /*logo*/
-#child2 img {
+#logo img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/*height: #child1; [Need to use javascript to match height with child1]*/ 
+	height:120px;
 }
 
 /*Main in Page*/
@@ -138,56 +134,4 @@ main ul, ol {
 
 .center {
 	text-align: center;
-}
-
-
-/*Covid Info Page*/
-#info {
-	text-align: center;
-}
-
-#info dt{
-	margin-top: 10px;
-}
-
-
-/*Team Info Page*/
-#team h2{
-	text-align: center;
-	
-}
-
-#team ul{
-	margin: auto;
-}
-
-/*sign up page*/
-form .form-row {
-	margin: 0 15px;
-	display: -webkit-flex;
-}
-
-.form-row .form-group {
-	float: left;
-	width: 50%
-}
-
-.form-group {
-	margin-bottom: 10px;
-}
-
-label {
-	font-size: 16px;
-	font-weight: bold;
-	margin-bottom: 2px;
-}
-
-input {
-	width: 75%;
-}
-
-#radio input {
-	display: inline-block;
-	width: auto;
-	margin-right: 10%;
 }

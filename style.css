@@ -36,7 +36,7 @@ mark {
 }
 
 footer {
-	position: absolute;
+	position: sticky;
 	bottom: 0;
 }
 
@@ -106,10 +106,12 @@ h2, h3, h4 {
 	margin: 25px 0 5px 0;
 }
 
+/**
 main div
 {
 	background-color: #dddddd;
 }
+**/
 
 p {
 	margin: 0;

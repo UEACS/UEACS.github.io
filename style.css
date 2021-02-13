@@ -6,14 +6,10 @@ body {
 	padding: 0px;
 	margin: 20px;
 
-	background-color: #f4f4f4;
+	background-color: #35424a;
 
 	position: relative;
 	min-height: 100vh;
-}
-
-#c-info, #c-news {
-	padding-bottom: 50px;
 }
 
 /*Global*/
@@ -28,6 +24,7 @@ main {
 	margin: auto;
 	overflow: hidden;
 	min-height: 100%;
+	background-color: #ffffff;
 }
 
 mark {
@@ -45,18 +42,18 @@ footer {
 header {
 	background: #35424a;
 	color: white;
-	padding-top: 30px;
+	padding-top: 20px;
 	min-height: 70px;
 	border-bottom: #00abe1 3px solid;
 }
 
-header #child1 {
+header #text {
 	float: left;
 	width: 75%
 }
 
 header #logo {
-	float: left;
+	float: right;
 }
 
 

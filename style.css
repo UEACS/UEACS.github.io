@@ -124,8 +124,9 @@ p {
 }
 
 main ul, ol {
-	background: #edfb9c;
-	border: #e1ca00 2.5px solid;
+	background: #E68627;
+	border: #995614 2.5px solid;
+	color: white;
 	width: 60%;
 }
 

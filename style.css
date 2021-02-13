@@ -102,7 +102,7 @@ main{
 }
 
 h2, h3, h4 {
-	color: #361999;
+	color: #002bb8;
 	margin: 25px 0 5px 0;
 }
 
@@ -124,11 +124,16 @@ p {
 }
 
 main ul, ol {
-	background: #9cf6fb;
-	border: #00abe1 2.5px solid;
+	background: #edfb9c;
+	border: #e1ca00 2.5px solid;
 	width: 60%;
 }
 
 .center {
 	text-align: center;
+}
+
+#icons img
+{
+	height: 240px;
 }

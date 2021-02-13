@@ -55,15 +55,10 @@ header #child1 {
 	width: 75%
 }
 
-header #child2 {
+header #logo {
 	float: left;
-	width: 25%
 }
 
-header .highlight, header .current a {
-	color: #00abe1;
-	font-weight: bold;
-}
 
 /*nav*/
 header a {
@@ -90,16 +85,11 @@ header nav {
 }
 
 
-header a:active {
-	color: #361999;
-}
-
-
 /*logo*/
 #logo img {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: left;
+	align-items: left;
 	height:120px;
 }
 
@@ -114,6 +104,11 @@ main{
 h2, h3, h4 {
 	color: #361999;
 	margin: 25px 0 5px 0;
+}
+
+main div
+{
+	background-color: #dddddd;
 }
 
 p {

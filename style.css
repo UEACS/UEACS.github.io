@@ -153,3 +153,15 @@ mark
 {
 	height: 240px;
 }
+
+#percentImg
+{
+	height: 350px;
+	position: left;
+}
+
+#numberImg
+{
+	height: 350px;
+	position: right;
+}

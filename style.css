@@ -99,7 +99,8 @@ main{
 	border: #00abe1 5px solid;
 }
 
-h2, h3, h4 {
+h2, h3, h4
+{
 	color: #002bb8;
 	margin: 25px 0 5px 0;
 }
@@ -111,25 +112,41 @@ main div
 }
 **/
 
-p {
+p
+{
 	margin: 0;
 }
 
 
-.split {
+.split
+{
 	margin: 15px 10px 15px 10px;
 	border: #00abe1 2.5px solid;
 }
 
-main ul, ol {
+main ul, ol
+{
 	background: #E68627;
 	border: #995614 2.5px solid;
 	color: white;
 	width: 60%;
 }
 
-.center {
+.center
+{
 	text-align: center;
+}
+
+mark
+{
+	background-color: #3C414F;
+	border-radius: 3px;
+	padding: 2px;
+}
+
+.channel
+{
+	color: #6C7EB8;
 }
 
 #icons img

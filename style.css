@@ -33,7 +33,8 @@ mark {
 }
 
 footer {
-	position: sticky;
+	position: static;
+	color: white;
 	bottom: 0;
 }
 

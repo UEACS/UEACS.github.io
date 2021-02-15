@@ -33,6 +33,7 @@ mark {
 }
 
 footer {
+	padding-top: 2%;
 	position: static;
 	color: white;
 	bottom: 0;

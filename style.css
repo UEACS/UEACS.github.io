@@ -74,7 +74,7 @@ header ul {
 header li {
 	float: left;
 	display: inline;
-	padding: 0 45px 15px 0;
+	padding: 0px 45px 15px 0;
 }
 
 header nav {
@@ -94,9 +94,10 @@ header nav {
 /*Main in Page*/
 
 main{
-	margin-top: 15px;
-	padding: 15px;
+	margin-top: 20px;
+	padding: 20px;
 	border: #00abe1 5px solid;
+	border-style:solid;
 }
 
 h2, h3, h4

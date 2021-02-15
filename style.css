@@ -103,7 +103,7 @@ main{
 h2, h3, h4
 {
 	color: #002bb8;
-	margin: 25px 0 5px 0;
+	margin: 0px 0 5px 0;
 }
 
 /**
@@ -116,6 +116,7 @@ main div
 p
 {
 	margin: 0;
+	padding-bottom: 25px;
 }
 
 

@@ -57,6 +57,10 @@ header #logo {
 	float: right;
 }
 
+header .highlight, header .current a {
+	color: #00abe1;
+	font-weight: bold;
+}
 
 /*nav*/
 header a {
@@ -94,15 +98,23 @@ header nav {
 /*Main in Page*/
 
 main{
+	background-color: #36393F;
 	margin-top: 20px;
 	padding: 20px;
 	border: #00abe1 5px solid;
 	border-style:solid;
 }
 
-h2, h3, h4
+h2
 {
-	color: #002bb8;
+	color: #3E73DE;
+	margin: 0px 0 5px 0;
+	border-bottom: #00abe1 6px double;
+}
+
+h3, h4
+{
+	color: #3E73DE;
 	margin: 0px 0 5px 0;
 }
 
@@ -115,6 +127,7 @@ main div
 
 p
 {
+	color: white;
 	margin: 0;
 	padding-bottom: 25px;
 }
@@ -128,8 +141,8 @@ p
 
 main ul, ol
 {
-	background: #E68627;
-	border: #995614 2.5px solid;
+	background: #DE2868;
+	border: #91133F 3px solid;
 	color: white;
 	width: 60%;
 }

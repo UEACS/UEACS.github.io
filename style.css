@@ -163,6 +163,12 @@ main ul, ol
 	text-align: center;
 }
 
+.pp
+{
+	height: 40px;
+	border-radius: 50%;
+}
+
 mark
 {
 	background-color: #3C414F;

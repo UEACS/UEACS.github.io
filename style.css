@@ -91,9 +91,9 @@ header nav {
 /*logo*/
 #logo img {
 	display: flex;
-	justify-content: left;
-	align-items: left;
-	height:120px;
+	justify-content: top;
+	align-items: top;
+	height:160px;
 }
 
 /*Main in Page*/

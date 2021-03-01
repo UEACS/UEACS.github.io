@@ -30,7 +30,7 @@ main {
 	position:sticky;
 	overflow: hidden;
 	/*min-height: 100%;*/
-	background-color: #CAE9FC;
+	background-color: #ffffff;
 }
 
 mark {
@@ -50,10 +50,10 @@ footer {
 /*Header*/
 header {
 	background: #b3cbda;
-	color: #36393F;
+	color: #F64F23;
 	/*padding-top: 20px;*/
 	min-height: 170px;
-	border-bottom: #00abe1 3px solid;
+	border-bottom: #FEB700 3px solid;
 }
 
 header #text {
@@ -79,7 +79,7 @@ header a {
 }
 header a:hover
 {
-	color: #00abe1;
+	color: #81BD00;
 }
 
 header ul {
@@ -111,18 +111,17 @@ header nav {
 
 main
 {
-	background-color: #d3d3d3;
 	margin-top: 20px;
 	padding: 20px;
-	border: #00abe1 5px solid;
+	border: #FEB700 5px solid;
 	border-style:solid;
 }
 
 h2
 {
-	color: #3E73DE;
+	color: #81BD00;
 	margin: 0px 0 5px 0;
-	border-bottom: #00abe1 6px double;
+	border-bottom: #81BD00 6px double;
 }
 
 h3, h4
@@ -164,7 +163,7 @@ a
 
 main ul, ol
 {
-	background: #DE2868;
+	background: #F64F23;
 	border: #91133F 3px solid;
 	color: white;
 	width: 60%;

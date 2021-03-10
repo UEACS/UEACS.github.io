@@ -180,6 +180,44 @@ main ul, ol
 	border-radius: 50%;
 }
 
+/** https://www.youtube.com/watch?v=tXiWZTg4aGE **/
+.switch
+{
+	opacity: 0;
+}
+.switch-vis
+{
+	width: 80px;
+	height: 40px;
+	background: white;
+	border-radius: 20px;
+	position: relative;
+	cursor: pointer;
+	box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.switch-vis::before
+{
+	content: '';
+	position: absolute;
+	height: 32px;
+	width: 32px;
+	background: #b3cbda;
+	border-radius: 50%;
+	left: 4px;
+	top: 4px;
+	transition: all 150ms ease-out;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+input[type=checkbox]:checked + .switch-vis::before
+{
+	left: 42px;
+	background: #35424a;
+}
+input[type=checkbox]:checked + .switch-vis
+{
+	background: #7cff6b;
+}
+
 mark
 {
 	background-color: #3C414F;

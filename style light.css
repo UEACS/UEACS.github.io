@@ -91,6 +91,7 @@ header li {
 	float: left;
 	display: inline;
 	padding: 0px 45px 15px 0;
+	font-weight: bold;
 }
 
 header nav {

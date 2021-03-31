@@ -111,7 +111,7 @@ header nav {
 
 main
 {
-	background-color: #36393F;
+	background-color: #2e3542;
 	margin-top: 20px;
 	padding: 20px;
 	border: #00abe1 5px solid;
@@ -131,12 +131,6 @@ h3, h4
 	margin: 0px 0 5px 0;
 }
 
-/**
-main div
-{
-	background-color: #dddddd;
-}
-**/
 
 p
 {

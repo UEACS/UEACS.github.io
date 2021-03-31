@@ -1,10 +1,11 @@
-body {
+body
+{
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15.5px;
 	line-height: 1.5;
 
 	padding: 0px;
-	margin: 20px;
+	margin-top: 0px;
 
 	background-color: #35424a;
 
@@ -12,55 +13,61 @@ body {
 	min-height: 100vh;
 }
 
-/*Global*/
-#container {
-	width: 80%;
-	margin-left: 10%;
-	margin-right: 10%;
-	overflow: hidden;
-	align-content: center;
-	/*background-color: #35424a;*/
-	position: fixed;
-}
-
-main {
+main
+{
 	width: 80%;
 	margin: auto;
 	padding-top: 50px;
 	position:sticky;
 	overflow: hidden;
-	/*min-height: 100%;*/
+	z-index: 0;
 	background-color: #CAE9FC;
 }
 
-mark {
-	background: #361999;
-	color: white;
-}
-
-footer {
+footer
+{
 	padding-top: 2%;
 	position: static;
 	color: white;
 	bottom: 0;
 }
 
+mark
+{
+	background: #361999;
+	color: white;
+}
+
+#container
+{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	overflow: hidden;
+	align-content: center;
+	min-height: 12vh; /* 17 is deafult */
+}
 
 /*Header*/
-header {
+header
+{
+	position: static;
+	z-index: 1;
 	background: #35424a;
 	color: white;
-	/*padding-top: 20px;*/
-	min-height: 170px;
+	width: 100%;
 	border-bottom: #00abe1 3px solid;
 }
 
-header #text {
+
+header #text
+{
 	float: left;
 	width: 75%
 }
 
-header #logo {
+header #logo
+{
 	float: right;
 }
 
@@ -96,6 +103,11 @@ header li {
 header nav {
 	float: left;
 	margin-top: 10px
+}
+
+header label
+{
+	float: left;
 }
 
 
@@ -240,6 +252,24 @@ mark
 {
 	height: 350px;
 	position: right;
+}
+
+#floating-notice
+{
+	background-color: #00abe1;
+	color: black;
+	border: #361999;
+	border-radius: 20px;
+	bottom: 20px;
+	padding: 20px;
+	position: fixed;
+	z-index: 3;
+	display:block;
+}
+#floating-notice img
+{
+	float: right;
+	cursor: pointer;
 }
 
 /** Mobile Devices **/

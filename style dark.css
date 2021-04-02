@@ -293,6 +293,39 @@ mark
 	cursor: pointer;
 }
 
+#center-text
+{
+	text-align: center;
+}
+#vertical-nav
+{
+	padding: 0;
+}
+#vertical-nav ul
+{
+	margin: 0 auto;
+	display: table;
+	background: none;
+	width: 40%;
+	border: #00abe1 solid;
+	
+}
+#vertical-nav li
+{
+	float: none;
+	display: inline;
+	text-align: center;
+	line-height: 10vh;
+}
+#vertical-nav a
+{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
 /** Mobile Devices **/
 @media only all and (max-width:768px)
 {

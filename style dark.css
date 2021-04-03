@@ -40,10 +40,11 @@ mark
 
 #container
 {
+	position: relative;
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
-	overflow: hidden;
+	overflow: visible;
 	align-content: center;
 	min-height: 12vh; /* 17 is deafult */
 }
@@ -51,19 +52,18 @@ mark
 /*Header*/
 header
 {
-	position: static;
 	z-index: 1;
-	background: #35424a;
 	color: white;
 	width: 100%;
-	border-bottom: #00abe1 3px solid;
 }
 
 
-header #text
+header .header-text
 {
-	float: left;
-	width: 75%
+	width: 75%;
+	background-color: transparent;
+	border-bottom: #00abe1 0px solid;
+	margin-bottom: 3px;
 }
 
 header #logo
@@ -76,47 +76,65 @@ header .highlight, header .current a {
 	font-weight: bold;
 }
 
+header label
+{
+	float: left;
+}
+/*logo*/
+#logo
+{
+	position: absolute;
+	right: 10px;
+	z-index: 2;
+}
+#logo img
+{
+	height:160px;
+}
+
 /*nav*/
-header a {
+.header-text nav a
+{
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
 }
-header a:hover
+.header-text nav a:hover
 {
 	color: #00abe1;
 }
 
-header ul {
+.header-text nav ul
+{
 	padding: 0;
 	margin: 0;
 }
 
-header li {
+.header-text nav li
+{
 	float: left;
 	display: inline;
 	padding: 0px 45px 15px 0;
 	font-weight: bold;
 }
 
-header nav {
-	float: left;
-	margin-top: 10px
-}
-
-header label
+.header-text nav
 {
+	margin: 10px 10% 0 10%;
 	float: left;
+	margin-top: 10px;
 }
-
-
-/*logo*/
-#logo img {
-	display: flex;
-	justify-content: top;
-	align-items: top;
-	height:160px;
+.header-text
+{
+	z-index: 1;
+	float: left;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	background-color: #35424a;
+	border-bottom: #00abe1 3px solid;
+	margin-bottom: 5px;
 }
 
 /*Main in Page*/
@@ -284,7 +302,7 @@ mark
 	bottom: 20px;
 	padding: 20px 20px 0px 20px;
 	position: fixed;
-	z-index: 3;
+	z-index: 1;
 	display:block;
 }
 #floating-notice img
@@ -293,33 +311,59 @@ mark
 	cursor: pointer;
 }
 
+.table-area
+{
+	display: table;
+	table-layout: 10%;
+	width: 100%;
+}
+
+#logo-left
+{
+	display: table-cell;
+	float: left;
+}
+#logo-left img, #logo-right img
+{
+	width: 10vw;
+}
+#logo-right
+{
+	display: table-cell;
+	float: right;
+}
 #center-text
 {
 	text-align: center;
 }
 #vertical-nav
 {
+	display: table-cell;
+	width: 1%;
+	margin-top: 10%;
 	padding: 0;
 }
 #vertical-nav ul
 {
-	margin: 0 auto;
+	padding: 0;
+	margin: 0 auto auto auto;
 	display: table;
 	background: none;
-	width: 40%;
+	width: 60%;
 	border: #00abe1 solid;
 	
 }
 #vertical-nav li
 {
 	float: none;
-	display: inline;
+	display: table-row;
 	text-align: center;
 	line-height: 10vh;
 }
 #vertical-nav a
 {
 	color: white;
+	display: table-cell;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-size: 16px;

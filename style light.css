@@ -29,20 +29,12 @@ footer
 header {
 	background: #b3cbda;
 	color: #F64F23;
-	border-bottom: #FEB700 3px solid;
+	/**border-bottom: #FEB700 3px solid;**/
 }
 
-header #text
+header .header-text
 {
-}
-
-header #logo
-{
-}
-
-header .highlight, header .current a
-{
-	color: #00abe1;
+	border-bottom: #FEB700 0px solid;
 }
 
 /*nav*/
@@ -55,22 +47,16 @@ header a:hover
 	color: #81BD00;
 }
 
-header ul
-{
-}
-
-header li
-{
-}
-
-header nav
-{
-}
-
 
 /*logo*/
 #logo img
 {
+}
+
+.header-text
+{
+	background-color: #b3cbda;
+	border-bottom: #FEB700 3px solid;
 }
 
 /*Main in Page*/
@@ -139,16 +125,15 @@ mark
 	color: #6C7EB8;
 }
 
-#icons img
+#vertical-nav ul
 {
+	background-color: #b3cbda;
+	border: #FEB700 solid;
+	
 }
-
-#percentImg
+#vertical-nav a
 {
-}
-
-#numberImg
-{
+	color: rgb(255, 255, 255);
 }
 
 /** Mobile Devices **/
@@ -168,7 +153,7 @@ mark
 	}
     main
     {
-		background-color: #d3d3d3;
+		background-color: #b3cbda;
 		border: #00abe1 0px solid;
     }
     h1

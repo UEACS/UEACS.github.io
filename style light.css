@@ -139,38 +139,15 @@ mark
 /** Mobile Devices **/
 @media only all and (max-width:768px)
 {
-	header
-	{
-	}
-	header a
-	{
-	}
-	header #text
-	{
-	}
-	#container
-	{
-	}
     main
     {
 		background-color: #b3cbda;
 		border: #00abe1 0px solid;
     }
-    h1
-    {
-    }
-    nav a
-    {
-    }
-	body
-    {
-    }
-    #hero
-    {
-    }
-    footer
-    {
-    }
+	.header-text nav
+	{
+		background-color: #b3cbda;
+	}
 }
 
 footer

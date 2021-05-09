@@ -15,21 +15,23 @@ body
 
 main
 {
-	width: 80%;
-	margin: auto;
-	padding-top: 50px;
-	position:sticky;
-	overflow: hidden;
-	z-index: 0;
-	background-color: #CAE9FC;
+    width: 56%;
+    margin: auto;
+    margin-top: 160px;
 }
 
 footer
 {
-	padding-top: 2%;
-	position: static;
-	color: white;
+	position: relative;
+	padding-top: 5px;
+	left: 0;
 	bottom: 0;
+	width: 100%;
+	background-color: #8f8f8f73;
+	color: white;
+	font-size: 0.6em;
+	text-align: center;
+	margin-top: 20px;
 }
 
 mark
@@ -89,7 +91,7 @@ header label
 }
 #logo img
 {
-	height:160px;
+	height:100px;
 }
 
 /*nav*/
@@ -111,7 +113,7 @@ header label
 	margin: 0;
 }
 
-.header-text nav li
+.header-text nav li,.header-text nav
 {
 	float: left;
 	display: inline;
@@ -123,7 +125,6 @@ header label
 {
 	margin: 10px 10% 0 10%;
 	float: left;
-	margin-top: 10px;
 }
 .header-text
 {
@@ -137,16 +138,16 @@ header label
 	margin-bottom: 5px;
 }
 
-/*Main in Page*/
-
-main
+#add-bot
 {
-	background-color: #2e3542;
-	margin-top: 20px;
-	padding: 20px;
-	border: #00abe1 5px solid;
-	border-style:solid;
+	color:#3E73DE;
+	padding: 5px;
+	background-color: white;
+	border: white 3px solid;
+	border-radius: 20px;
 }
+
+/*Main in Page*/
 
 h2
 {
@@ -209,17 +210,24 @@ a
 
 main ul, ol
 {
-	background: #DE2868;
-	border: #91133F 3px solid;
-	color: white;
-	width: 80%;
-	margin: auto;
-	padding: 5px 2px 5px 20px;
+    background: #de2868a6;
+    border: #91133fbb 3px solid;
+    color: white;
+    width: 80%;
+    margin: auto;
+	padding: 4px 2px 2px 20px;
 }
 
 .center
 {
 	text-align: center;
+}
+
+.embed
+{
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #8f8f8f73;
 }
 
 .pp,.arun-pp
@@ -268,7 +276,7 @@ input[type=checkbox]:checked + .switch-vis
 
 mark
 {
-	background-color: #3C414F;
+	background-color: #f1f1f1a4;
 	border-radius: 3px;
 	padding: 2px;
 }
@@ -449,11 +457,31 @@ mark
 		margin: 0;
 		padding: 0;
 	}
+	footer
+	{
+	position: relative;
+	padding-top: 5px;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: transparent;
+	color: white;
+	font-size: 0.3em;
+	text-align: center;
+	}
 
 	#container
 	{
 		margin-left: 2%;
 		margin-right: 2%;
+	}
+	#add-bot
+	{
+		display: inline flow-root;
+		padding: 2px;
+		background-color: white;
+		border-radius: 20px;
+		right: 0;
 	}
 	header .header-text
 	{
@@ -464,7 +492,6 @@ mark
 		/*margin: 5px 40% 0 10%;*/
 		margin: 0px;
 		padding: 2%;
-		background-color: #2e3542;
 	}
 	.header-text nav li
 	{
@@ -504,11 +531,4 @@ mark
 	{
 		width: 100%;
 	}
-}
-
-footer
-{
-    font-size: 0.6em;
-    text-align: center;
-    font-style: italic;
 }

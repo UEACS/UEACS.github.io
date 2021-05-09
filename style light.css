@@ -11,7 +11,9 @@ body {
 
 main
 {
-	background-color: #ffffff;
+	background-color: #F64F23;
+	border: #81BD00 3px solid;
+	padding: 5px;
 }
 
 mark {
@@ -61,15 +63,10 @@ header a:hover
 
 /*Main in Page*/
 
-main
-{
-	border: #FEB700 5px solid;
-}
-
 h2
 {
-	color: #81BD00;
-	border-bottom: #81BD00 6px double;
+	color: #FEB700;
+	border-bottom: #FEB700 6px double;
 }
 
 h3, h4
@@ -80,17 +77,18 @@ h3, h4
 
 p
 {
-	color: #35424a;
+	color: #FEB700;
 }
 
 q
 {
-	color: #35424a;
+	color: rgb(0, 255, 191);
 }
 
 a
 {
-	color: #00abe1;
+	color: #ffffff;
+	font-style: oblique;
 }
 
 

@@ -212,7 +212,9 @@ main ul, ol
 	background: #DE2868;
 	border: #91133F 3px solid;
 	color: white;
-	width: 60%;
+	width: 80%;
+	margin: auto;
+	padding: 5px 2px 5px 20px;
 }
 
 .center

@@ -17,7 +17,7 @@ main
 {
     width: 56%;
     margin: auto;
-    margin-top: 160px;
+    /**margin-top: 160px;**/
 }
 
 footer
@@ -27,7 +27,7 @@ footer
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: #8f8f8f73;
+	border-top: #00abe1 3px solid;
 	color: white;
 	font-size: 0.6em;
 	text-align: center;
@@ -276,14 +276,14 @@ input[type=checkbox]:checked + .switch-vis
 
 mark
 {
-	background-color: #f1f1f1a4;
+	background-color: #414675;
 	border-radius: 3px;
 	padding: 2px;
 }
 
 .channel
 {
-	color: #6C7EB8;
+	color: #D4E1F8;
 }
 
 #icons img

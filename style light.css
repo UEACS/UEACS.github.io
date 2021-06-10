@@ -11,8 +11,6 @@ body {
 
 main
 {
-	background-color: #F64F23;
-	border: #81BD00 3px solid;
 	padding: 5px;
 }
 
@@ -65,7 +63,7 @@ header a:hover
 
 h2
 {
-	color: #FEB700;
+	color: #ffffff;
 	border-bottom: #FEB700 6px double;
 }
 
@@ -77,7 +75,7 @@ h3, h4
 
 p
 {
-	color: #FEB700;
+	color: #ffffff;
 }
 
 q
@@ -99,7 +97,7 @@ a
 
 main ul, ol
 {
-	background: #F64F23;
+	/**background: #F64F23;**/
 	border: #91133F 3px solid;
 	color: white;
 }

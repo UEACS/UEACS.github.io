@@ -2,7 +2,7 @@ function onThemeSwitch()
 {
     console.log('clicked');
     console.log(cssLink.href.substring(cssLink.href.lastIndexOf('/') + 1));
-    if(cssLink.href.substring(cssLink.href.lastIndexOf('/') + 1) === "style%20light.css")
+    if(cssLink.href.substring(cssLink.href.lastIndexOf('/') + 1) === "style.css")
     {
         cssLink.href = "style dark.css";
         console.log('light theme changed to dark theme');
@@ -10,7 +10,7 @@ function onThemeSwitch()
     }
     else
     {
-        cssLink.href = "style light.css";
+        cssLink.href = "style.css";
         console.log('dark theme changed to light theme');
         localStorage.setItem('theme','light');
     }

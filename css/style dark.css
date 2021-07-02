@@ -308,12 +308,14 @@ mark
 	background-color: #00abe1;
 	color: rgb(51, 51, 51);
 	border: #d3d3d3 4px solid;
-	border-radius: 0px;
+	border-radius: 20px;
 	bottom: 20px;
 	padding: 20px 20px 0px 20px;
-	position: fixed;
+	position: sticky;
 	z-index: 1;
 	display:block;
+	width: 60%;
+	margin: auto;
 }
 #floating-notice img
 {
@@ -377,158 +379,133 @@ mark
 	font-size: 16px;
 	font-weight: bold;
 }
-
 /** Mobile Devices **/
 @media only all and (max-width:768px)
 {
-	/*
-	header
-	{
-		padding-top: 0px;
-		min-height: 50px;
-		text-align: center;
-	}
-	header a
-	{
-		align-content: center;
-		font-size: 16px;
-	}
-	header #text
-	{
-		float: none;
-		width: 75%
-	}
-	#container
-	{
-		width: 100%;
-	}
-    main
-    {
-        padding: 0;
-		margin-top: 2px;
-		background-color: #35424a;
-		border: #00abe1 0px solid;
-    }
-    h1
-    {
-        font-size: 2em;
-        padding-top: 0px;
-        padding-left: 1.5em;
-        width: 85%;
-        text-align: center;
-    }
-    nav a
-    {
-		display:flex;
-        padding: 0.5em;
-        width: 10%;
-        float: left;
-        min-width: 63m;
-        margin-left: 0.5em;
-    }
-	body
-    {
-        margin: 0px;
-        padding: 0%;
-    }
-    #hero
-    {
-        display: none;
-    }
-    footer
-    {
-        padding: 0.5em;
-        margin: 0;
-    }
-    #mobile {display: inline;}
-    #desktop {display: none;}
-	*/
 	body
 	{
-		padding: 0;
+		padding: 10px;
 		display: block;
-		background-color: #2e3542;
+		background-color: #35424a;
 	}
 	main
 	{
 		display: block;
 		width: 100%;
 		border: none;
-		margin: 0;
 		padding: 0;
+		margin-top: 69px;
+
 	}
 	footer
 	{
-	position: relative;
-	padding-top: 5px;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: transparent;
-	color: white;
-	font-size: 0.3em;
-	text-align: center;
+		position: relative;
+		padding-top: .05cm;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: transparent;
+		color: white;
+		font-size: 12px;
+		text-align: center;
 	}
-
+	p
+	{
+		
+		text-align: left;
+		padding-top: 10px;
+	}
 	#container
 	{
 		margin-left: 2%;
 		margin-right: 2%;
-	}
-	#add-bot
-	{
-		display: inline flow-root;
-		padding: 2px;
-		background-color: white;
-		border-radius: 20px;
-		right: 0;
-	}
-	header .header-text
-	{
 		width: 100%;
 	}
-	.header-text nav
+	header .nav-text
 	{
-		/*margin: 5px 40% 0 10%;*/
-		margin: 0px;
-		padding: 2%;
-	}
-	.header-text nav li
-	{
-		padding: 0px 40px 1px 0;
+		position: sticky;
 		display: inline-block;
-		width: 50%;
+		width: 90px;
+		float: right;
+		margin-right: 8.5%;
 	}
-	#logo
+
+	.nav-text h1 {
+		float: right;
+		padding-right: 2.5vw;
+	}
+
+	.nav-text nav
 	{
-		display: none;
+		margin: auto;
+		width: 100%;
+	}
+	.nav-text nav ul
+	{
+		padding: 0;
+		margin: auto;
+		text-align: center;
+	}
+	.nav-text nav li
+	{
+		padding: 0px 8px 0px 8px;
+		display: inline-block;
+		float: none;
+		background-color: #262f35;
+		border-radius: 5px;
+		margin: 3px;
+	}
+	#logo img
+	{
+	position: static; 
+	left: 750;
+	top: 15;
+	height: 90px;
 	}
 	header label
 	{
 		float: right;
 	}
-	.switch-vis
+	div .nav-text
 	{
-		width: 40px;
-		height: 20px;
+		font-size: 0.4cm;
 	}
-	.switch-vis::before
+	#info-card{
+	margin:auto;
+	border-radius: 0.5cm;
+	background-color: white;
+	padding: 5px;
+	margin-top: 105px;
+	min-height: auto;
+	display: block;
+	}
+}
+
+/*For smaller mobile displays*/
+@media only all and (max-width:250px)
+{
+	p, main li{
+		font-size: 5.5vw;
+	}
+
+	h1{
+		/*display :none;*/
+		font-size: 12vw;
+	}
+
+	h2{
+		font-size: 8.5vw;
+	}
+
+	#logo img
 	{
-		width: 16px;
-		height: 16px;
-		top: 2px;
+	height: 70px;
 	}
-	input[type=checkbox]:checked + .switch-vis::before
-	{
-	left: 21px;
-	background: #35424a;
+
+	main{
+		margin-top: 73px;
 	}
-	div .header-text
-	{
-		font-size: 10px;
-	}
-	#vertical-nav
-	{
-		width: 100%;
-	}
+
+
+
 }

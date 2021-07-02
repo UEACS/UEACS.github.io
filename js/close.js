@@ -3,17 +3,17 @@ function closeParent()
     console.log('clicked');
     box.remove();
     console.log('closed');
-    localStorage.setItem('noticed','true');
+    localStorage.setItem('noticed','July Election');
 }
 
 //localStorage.setItem('noticed','false');
 //closeParent(); // When election is about to begin, remove this line
 const cross = document.querySelector('#notice-cross');
 const box = document.querySelector('#floating-notice');
-box.querySelector("strong").innerHTML = "We don't respect your privacy";
-box.querySelector("p").innerHTML = "<h4>Like, at all. Now accept my cookies bitch.</h4><h5>Also I cba to make an accept buttons so just click the cross and ignore this.</h5><h6>(There's only 2 cookies, one for saving which theme you set and the other is literally just so you don't see this message again!)</h6>";
+box.querySelector("strong").innerHTML = " BREAKING NEWS: New Election Coming Soon!";
+box.querySelector("p").innerHTML = "Stay up to date with election information, candidate statements and our own takes and insights into the election.";
 
-if (localStorage.getItem('noticed')=='true')
+if (localStorage.getItem('noticed')=='July Election')
 {
     closeParent();
 }

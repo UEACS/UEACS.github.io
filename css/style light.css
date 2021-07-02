@@ -56,7 +56,7 @@ header a:hover
 .header-text
 {
 	background-color: #b3cbda;
-	border-bottom: #FEB700 3px solid;
+	border-bottom: #00abe1 3px solid;
 }
 
 /*Main in Page*/
@@ -64,7 +64,7 @@ header a:hover
 h2
 {
 	color: #ffffff;
-	border-bottom: #FEB700 6px double;
+	border-bottom: #FEB700 3px solid;
 }
 
 h3, h4
@@ -86,7 +86,6 @@ q
 a
 {
 	color: #ffffff;
-	font-style: oblique;
 }
 
 
@@ -130,6 +129,11 @@ mark
 #vertical-nav a
 {
 	color: rgb(255, 255, 255);
+}
+
+#floating-notice
+{
+	border: #FEB700 4px solid;
 }
 
 /** Mobile Devices **/

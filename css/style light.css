@@ -32,7 +32,7 @@ header {
 	/**border-bottom: #FEB700 3px solid;**/
 }
 
-header .header-text
+header .nav-text
 {
 	border-bottom: #FEB700 0px solid;
 }
@@ -53,7 +53,7 @@ header a:hover
 {
 }
 
-.header-text
+.nav-text
 {
 	background-color: #b3cbda;
 	border-bottom: #00abe1 3px solid;
@@ -144,7 +144,7 @@ mark
 		background-color: #b3cbda;
 		border: #00abe1 0px solid;
     }
-	.header-text nav
+	.nav-text nav
 	{
 		background-color: #b3cbda;
 	}

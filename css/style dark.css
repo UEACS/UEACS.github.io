@@ -60,7 +60,7 @@ header
 }
 
 
-header .header-text
+header .nav-text
 {
 	width: 75%;
 	background-color: transparent;
@@ -95,25 +95,25 @@ header label
 }
 
 /*nav*/
-.header-text nav a
+.nav-text nav a
 {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px;
 }
-.header-text nav a:hover
+.nav-text nav a:hover
 {
 	color: #00abe1;
 }
 
-.header-text nav ul
+.nav-text nav ul
 {
 	padding: 0;
 	margin: 0;
 }
 
-.header-text nav li,.header-text nav
+.nav-text nav li,.nav-text nav
 {
 	float: left;
 	display: inline;
@@ -121,12 +121,12 @@ header label
 	font-weight: bold;
 }
 
-.header-text nav
+.nav-text nav
 {
 	margin: 10px 10% 0 10%;
 	float: left;
 }
-.header-text
+.nav-text
 {
 	z-index: 1;
 	float: left;

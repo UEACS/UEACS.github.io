@@ -70,7 +70,7 @@ header .nav-text
 
 header #logo
 {
-	float: right;
+	float: left;
 }
 
 header .highlight, header .current a {
@@ -425,7 +425,7 @@ mark
 	{
 		position: sticky;
 		display: inline-block;
-		width: 90px;
+		width: 90%;
 		float: right;
 		margin-right: 8.5%;
 	}
@@ -454,6 +454,10 @@ mark
 		background-color: #262f35;
 		border-radius: 5px;
 		margin: 3px;
+	}
+	#logo
+	{
+		left: 10px;
 	}
 	#logo img
 	{

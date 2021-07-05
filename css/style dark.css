@@ -219,6 +219,7 @@ main ul, ol
 .center
 {
 	display: flex;
+	margin: auto;
 }
 
 .embed

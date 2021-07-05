@@ -216,6 +216,11 @@ main ul, ol
 	padding: 4px 2px 2px 20px;
 }
 
+.center
+{
+	display: flex;
+}
+
 .embed
 {
 	border-radius: 10px;

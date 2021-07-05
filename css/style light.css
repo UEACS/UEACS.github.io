@@ -97,7 +97,7 @@ a
 main ul, ol
 {
 	/**background: #F64F23;**/
-	border: #91133F 3px solid;
+	border: #FEB700 3px solid;
 	color: white;
 }
 
@@ -134,6 +134,8 @@ mark
 #floating-notice
 {
 	border: #FEB700 4px solid;
+	background-color: #b3cbda;
+	color: #35424a;
 }
 
 /** Mobile Devices **/

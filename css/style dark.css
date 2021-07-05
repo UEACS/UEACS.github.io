@@ -220,6 +220,7 @@ main ul, ol
 {
 	display: flex;
 	margin: auto;
+	max-width: fit-content;
 }
 
 .embed
@@ -304,8 +305,8 @@ mark
 
 #floating-notice
 {
-	background-color: #00abe1;
-	color: rgb(51, 51, 51);
+	background-color: #35424a;
+	color: #d3d3d3;
 	border: #d3d3d3 4px solid;
 	border-radius: 20px;
 	bottom: 20px;

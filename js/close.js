@@ -3,10 +3,10 @@ function closeParent()
     console.log('clicked');
     box.remove();
     console.log('closed');
-    localStorage.setItem('noticed','July Election');
+    localStorage.setItem('noticed','July Election Started');
 }
 
-localStorage.setItem('noticed','false');
+//localStorage.setItem('noticed','false');
 //closeParent(); // When election is about to begin, remove this line
 const cross = document.querySelector('#notice-cross');
 const box = document.querySelector('#floating-notice');
@@ -17,7 +17,7 @@ link.href="manifestos.html";
 link.innerHTML="<p>Manifestos</p>";
 box.appendChild(link);
 
-if (localStorage.getItem('noticed')=='July Election')
+if (localStorage.getItem('noticed')=='July Election Started')
 {
     closeParent();
 }

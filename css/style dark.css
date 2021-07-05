@@ -138,13 +138,10 @@ header label
 	margin-bottom: 5px;
 }
 
-#add-bot
+.youtube-vid
 {
-	color:#3E73DE;
-	padding: 5px;
-	background-color: white;
-	border: white 3px solid;
-	border-radius: 20px;
+	width: 80%;
+	margin: auto;
 }
 
 /*Main in Page*/
@@ -439,6 +436,7 @@ mark
 	{
 		margin: auto;
 		width: 100%;
+		padding: 0px 0px 0px 5px;
 	}
 	.nav-text nav ul
 	{

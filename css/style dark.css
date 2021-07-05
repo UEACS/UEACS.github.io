@@ -207,8 +207,9 @@ a
 
 main ul, ol
 {
-    background: #de2868a6;
-    border: #91133fbb 3px solid;
+    background: #3E73DE;
+    border: #00abe1 4px solid;
+	border-radius: 20px;
     color: white;
     width: 80%;
     margin: auto;

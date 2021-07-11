@@ -10,14 +10,14 @@ function closeParent()
 //closeParent(); // When election is about to begin, remove this line
 const cross = document.querySelector('#notice-cross');
 const box = document.querySelector('#floating-notice');
-box.querySelector("strong").innerHTML = "JULY ELECTION: Voting ends Sunday 9am";
-box.querySelector("p").innerHTML = "Stay up to date with election information, candidate statements and our own takes and insights into the election.";
+box.querySelector("strong").innerHTML = "JULY ELECTION: Voting ended 9am 11th July";
+box.querySelector("p").innerHTML = "Catch all the post-election juice right here!";
 var link = document.createElement("a");
 link.href="manifestos.html";
 link.innerHTML="<p>Manifestos</p>";
 box.appendChild(link);
 
-if (localStorage.getItem('noticed')=='July Election Started')
+if (localStorage.getItem('noticed')=='July Election Ended')
 {
     closeParent();
 }

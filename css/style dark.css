@@ -413,7 +413,7 @@ mark
 	font-weight: bold;
 }
 /** Mobile Devices **/
-@media only all and (max-width:768px)
+@media only screen and (max-width:768px)
 {
 	body
 	{

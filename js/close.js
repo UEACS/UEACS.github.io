@@ -13,8 +13,8 @@ const box = document.querySelector('#floating-notice');
 box.querySelector("strong").innerHTML = "JULY ELECTION: Voting ended 9am 11th July";
 box.querySelector("p").innerHTML = "Catch all the post-election juice right here!";
 var link = document.createElement("a");
-link.href="manifestos.html";
-link.innerHTML="<p>Manifestos</p>";
+link.href="admins.html";
+link.innerHTML="<p>New Admins</p>";
 box.appendChild(link);
 
 if (localStorage.getItem('noticed')=='July Election Ended')

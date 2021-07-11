@@ -328,6 +328,7 @@ mark
 	position: relative;
 	border-radius: 0.5cm;
 	background-color: white;
+	background-image: url("../media/pattern.png");
 	margin: auto;
 	padding: 0.6cm;
 	min-height: 50vh;

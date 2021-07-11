@@ -323,6 +323,39 @@ mark
 	cursor: pointer;
 }
 
+.card
+{
+	position: relative;
+	border-radius: 0.5cm;
+	background-color: white;
+	margin: auto;
+	padding: 0.6cm;
+	min-height: 50vh;
+	max-width: 7cm;
+}
+.card p
+{
+	text-align: center;
+	color: #35424a;
+	font-size: large;
+	padding: 20vh 0 0 0 ;
+}
+
+#next-button
+{
+	position: relative;
+	border-radius: 0.5cm;
+	background-color: #00abe1;
+	margin: auto;
+	padding: 0.3cm;
+	min-height: auto;
+	max-width: 7cm;
+	cursor: pointer;
+	text-align: center;
+	color: #35424a;
+	font-size: large;
+}
+
 .table-area
 {
 	display: table;

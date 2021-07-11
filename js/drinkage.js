@@ -1,12 +1,15 @@
 function nextCard()
 {
-   //Randomise card
+    console.log("Next card please");
+    card.querySelector("p").innerHTML = cards[Math.floor(Math.random()*cards.length)];
 }
 
 
 const nextButton = document.querySelector('#next-button');
 const card = document.querySelector('.card');
-box.querySelector("p").innerHTML = "Welcome To Drinkage!";
+card.querySelector("p").innerHTML = "Welcome To Drinkage!";
+
+var text = "No cards found!";
 
 function readTextFile(file)
 {
@@ -19,15 +22,16 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                alert(allText);
-                console.log(allText);
+                text = allText;
             }
         }
     }
     rawFile.send(null);
 }
-readTextFile("https://ueacs.co.uk/drinkage cards.txt")
+readTextFile("https://ueacs.co.uk/js/drinkage cards.txt");
 
-console.log(text);
+console.log("Text:"+text);
+var cards = text.split('\n');
+console.log(cards);
 
-cross.addEventListener("click", closeParent);
+nextButton.addEventListener("click", nextCard);

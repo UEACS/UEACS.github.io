@@ -3,7 +3,7 @@ function closeParent()
     console.log('clicked');
     box.remove();
     console.log('closed');
-    localStorage.setItem('noticed','July Election Started');
+    localStorage.setItem('noticed','July Election Ended');
 }
 
 //localStorage.setItem('noticed','false');

@@ -198,6 +198,21 @@ a
 	color: #00abe1;
 }
 
+form
+{
+	margin: auto;
+	width: max-content;
+}
+input
+{
+	margin: 5px;
+	padding: 5px;
+	color: #262f35;
+	border: #00abe1 3px solid;
+	border-radius: 10px;
+	background-color: white;
+}
+
 
 .split
 {
@@ -343,21 +358,51 @@ mark
 	padding: 2vh 0 0 0 ;
 }
 
+.button,.submit-button,#next-button
+{
+	background-color: #00abe1;
+	border-radius: 10px;
+	cursor: pointer;
+	width: min-content;
+}
+
+.button
+{
+	padding: 5px 30px 5px 30px;
+	margin: 5px;
+	margin-top: 5px;
+	display: inline-block;
+}
+
 #next-button
 {
 	position: relative;
-	border-radius: 0.5cm;
-	background-color: #00abe1;
 	margin: auto;
 	margin-top: 5px;
 	padding: 10px 50px 10px 50px;
-	width: min-content;
+	
 	min-height: auto;
 	max-width: 7cm;
-	cursor: pointer;
 	text-align: center;
 	color: #35424a;
 	font-size: large;
+}
+
+.submit-button
+{
+	padding: auto;
+	background-color: transparent;
+	border: none;
+	background-image: url("https://ueacs.co.uk/media/arrow.png");
+	background-size: contain;
+	background-repeat: round;
+	width: 30px;
+}
+
+#names
+{
+	width: 100%;
+	max-height: max-content;
 }
 
 .table-area

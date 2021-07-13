@@ -35,7 +35,7 @@
    </header>
 
    <main>
-      <h2>Drinkage 1.1.1</h2>
+      <h2>Drinkage 1.2.0</h2>
       <div class="card">
          <p>Null</p>
       </div>
@@ -43,6 +43,16 @@
       <div id="next-button">
          Next
       </div>
+
+      <div id="names">
+         
+      </div>
+
+      <form action="/js/drinkage.js/addName()">
+         <input type=text id="name" name="name" placeholder="Enter new name" onchange="addName()" onsubmit="addName()">
+
+         <input type=button class="submit-button" name="submit" onclick="addName()">
+      </form>
 
       <div id="floating-notice">
          <img src="media/Cross.png" height="10px" id="notice-cross">

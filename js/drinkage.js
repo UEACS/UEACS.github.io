@@ -5,6 +5,13 @@ function nextCard()
     {
         card.querySelector("p").innerHTML = common[Math.floor(Math.random()*common.length)];
     }
+    else
+    {
+        var index = Math.floor(Math.random()*rare.length);
+        card.querySelector("p").innerHTML = rare[index];
+        rare.splice(index,1);
+        console.log(rare);
+    }
     
 }
 
@@ -32,12 +39,14 @@ function readTextFile(file)
     }
     rawFile.send(null);
 }
-readTextFile("https://ueacs.co.uk/js/drinkage cards.txt");
+readTextFile("https://ueacs.co.uk/js/drinkCom.txt");
 
-console.log("Text:"+text);
-var cards = text.split('\n');
-console.log(cards);
+console.log("Common:"+text);
+var common = text.split('\n');
 
-var common = cards;
+readTextFile("https://ueacs.co.uk/js/drinkRare.txt");
+
+console.log("Rare:"+text);
+var rare = text.split('\n');
 
 nextButton.addEventListener("click", nextCard);

@@ -135,6 +135,7 @@ header label
 	top: 0;
 	background-color: #35424adb;
 	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
 	border-bottom: #00abe1 3px solid;
 	margin-bottom: 5px;
 }

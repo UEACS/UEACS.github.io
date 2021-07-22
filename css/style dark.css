@@ -133,7 +133,8 @@ header label
 	width: 100%;
 	position: sticky;
 	top: 0;
-	background-color: #35424a;
+	background-color: #35424adb;
+	backdrop-filter: blur(3px);
 	border-bottom: #00abe1 3px solid;
 	margin-bottom: 5px;
 }

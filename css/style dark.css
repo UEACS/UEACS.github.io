@@ -478,7 +478,7 @@ mark
 		width: 100%;
 		border: none;
 		padding: 0;
-		margin-top: 69px;
+		/**margin-top: 69px;**/
 
 	}
 	footer
@@ -539,6 +539,15 @@ mark
 		background-color: #262f35;
 		border-radius: 5px;
 		margin: 3px;
+	}
+	#vertical-nav
+	{
+		width: max-content;
+	}
+	#vertical-nav li
+	{
+		padding: 10px;
+		line-height: 6vh;
 	}
 	#logo
 	{

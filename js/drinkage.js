@@ -74,12 +74,12 @@ var text = "No cards found!";
 
 readTextFile("https://ueacs.co.uk/js/drinkCom.txt");
 
-console.log("Common:"+text);
+//console.log("Common:"+text);
 var common = text.split('\n');
 
 readTextFile("https://ueacs.co.uk/js/drinkRare.txt");
 
-console.log("Rare:"+text);
+//console.log("Rare:"+text);
 var rare = text.split('\n');
 
 nextButton.addEventListener("click", nextCard);

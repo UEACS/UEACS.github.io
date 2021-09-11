@@ -25,6 +25,12 @@ function nextCard()
         instruction = common[Math.floor(Math.random()*common.length)];
         
         instruction = instruction.replace('prsn',names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
+        if (instruction.match("\[.*\]"))
+        {
+            options = instruction.match("\[.*\]")[0].substring(1,instruction.match("\[.*\]")[0].length).split(",");
+            console.log(options);
+            instruction = instruction.replace("\[.*\]",options[Math.random()*options.length])
+        }
         card.querySelector("p").innerHTML = instruction;
     }
     else

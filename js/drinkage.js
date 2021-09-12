@@ -16,31 +16,45 @@ function readTextFile(file)
     rawFile.send(null);
 }
 
+function prepareInstruction(instruction)
+{
+    instruction = instruction.replace('prsn',names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
+    console.log(instruction.match(/[^\[\]]+(?=\])/g))
+    if (instruction.match(/[^\[\]]+(?=\])/g) != null)
+    {
+        options = instruction.match(/[^\[\]]+(?=\])/g)[0].split(",");
+        console.log(options);
+        console.log(Math.random()*options.length)
+        instruction = instruction.replace(/\[([^}]*)\]/g,options[Math.floor(Math.random()*options.length)])
+    }
+    return instruction;
+}
+
 function nextCard()
 {
     console.log("Next card please");
-    if (Math.random()>0)
+    if (Math.random()>0.3)
     {
         // Common cards
         instruction = common[Math.floor(Math.random()*common.length)];
+        instruction = prepareInstruction(instruction);
         
-        instruction = instruction.replace('prsn',names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
-        console.log(instruction.match(/[^\[\]]+(?=\])/g))
-        if (instruction.match(/[^\[\]]+(?=\])/g) != null)
-        {
-            options = instruction.match(/[^\[\]]+(?=\])/g)[0].split(",");
-            console.log(options);
-            console.log(Math.random()*options.length)
-            instruction = instruction.replace(/\[([^}]*)\]/g,options[Math.floor(Math.random()*options.length)])
-        }
+        card.querySelector("p").innerHTML = instruction;
+    }
+    else if(Math.random()>0.3)
+    {
+        // Uncommon cards
+        instruction = uncommon[Math.floor(Math.random()*uncommon.length)];
+        instruction = prepareInstruction(instruction);
+        
         card.querySelector("p").innerHTML = instruction;
     }
     else
     {
         // Rare cards
-        var index = Math.floor(Math.random()*rare.length);
-        instruction = rare[index];
-        instruction = instruction.replace("prsn",names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
+        instruction = rare[Math.floor(Math.random()*rare.length)];
+        instruction = prepareInstruction(instruction);
+
         card.querySelector("p").innerHTML = instruction;
         rare.splice(index,1);
     }

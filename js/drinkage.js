@@ -99,6 +99,11 @@ readTextFile("https://ueacs.co.uk/js/drinkCom.txt");
 //console.log("Common:"+text);
 var common = text.split('\n');
 
+readTextFile("https://ueacs.co.uk/js/drinkUncom.txt");
+
+//console.log("Uncommon:"+text);
+var uncommon = text.split('\n');
+
 readTextFile("https://ueacs.co.uk/js/drinkRare.txt");
 
 //console.log("Rare:"+text);

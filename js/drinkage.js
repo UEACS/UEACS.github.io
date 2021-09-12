@@ -25,11 +25,13 @@ function nextCard()
         instruction = common[Math.floor(Math.random()*common.length)];
         
         instruction = instruction.replace('prsn',names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
-        if (instruction.match("\[.*\]"))
+        console.log(instruction.match(/[^\[\]]+(?=\])/g))
+        if (instruction.match(/[^\[\]]+(?=\])/g) != null)
         {
-            options = instruction.match("\[.*\]")[0].substring(1,instruction.match("\[.*\]")[0].length).split(",");
+            options = instruction.match(/[^\[\]]+(?=\])/g)[0].split(",");
             console.log(options);
-            instruction = instruction.replace("\[.*\]",options[Math.random()*options.length])
+            console.log(Math.random()*options.length)
+            instruction = instruction.replace(/\[([^}]*)\]/g,options[Math.floor(Math.random()*options.length)])
         }
         card.querySelector("p").innerHTML = instruction;
     }

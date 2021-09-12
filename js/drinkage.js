@@ -52,13 +52,13 @@ function nextCard()
     else
     {
         // Rare cards
-        instruction = rare[Math.floor(Math.random()*rare.length)];
+        var index = Math.floor(Math.random()*rare.length); // Index used to remove card once played
+        instruction = rare[index];
         instruction = prepareInstruction(instruction);
 
         card.querySelector("p").innerHTML = instruction;
         rare.splice(index,1);
     }
-    
 }
 
 function addName()

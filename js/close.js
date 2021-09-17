@@ -3,22 +3,25 @@ function closeParent()
     console.log('clicked');
     box.remove();
     console.log('closed');
-    localStorage.setItem('noticed','July Election Ended');
+    localStorage.setItem('noticed','No cookies');
 }
 
-//localStorage.setItem('noticed','false');
-//closeParent(); // When election is about to begin, remove this line
 const cross = document.querySelector('#notice-cross');
 const box = document.querySelector('#floating-notice');
-box.querySelector("strong").innerHTML = "JULY ELECTION: Voting ended 9am 11th July";
-box.querySelector("p").innerHTML = "Catch all the post-election juice right here!";
-var link = document.createElement("a");
-link.href="admins.html";
-link.innerHTML="<p>New Admins</p>";
-box.appendChild(link);
+//localStorage.setItem('noticed','false');
+//closeParent(); // When election is about to begin, remove this line
 
-if (localStorage.getItem('noticed')=='July Election Ended')
+if (localStorage.getItem('noticed')=='No cookies')
 {
     closeParent();
 }
-cross.addEventListener("click", closeParent);
+else
+{
+    box.querySelector("strong").innerHTML = "We don't collect cookies";
+    box.querySelector("p").innerHTML = "Just to let you know";
+    //var link = document.createElement("a");
+    // link.href="admins.html";
+    // link.innerHTML="<p>New Admins</p>";
+    // box.appendChild(link);
+    cross.addEventListener("click", closeParent);
+}

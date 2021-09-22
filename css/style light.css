@@ -1,7 +1,7 @@
 @import "style dark.css";
 
 body {
-	background-color: #b3cbda;
+	background-color: #6babd2;
 }
 
 /*Global*/
@@ -27,14 +27,18 @@ footer
 
 /*Header*/
 header {
-	background: #b3cbda;
-	color: #F64F23;
+	/**background: #b3cbda;**/
+	color: rgb(185, 40, 0);
 	/**border-bottom: #FEB700 3px solid;**/
 }
 
 header .nav-text
 {
 	border-bottom: #FEB700 0px solid;
+}
+header .highlight, header .current a {
+    color: #ffffff;
+    font-weight: bold;
 }
 
 /*nav*/
@@ -56,7 +60,7 @@ header a:hover
 .nav-text
 {
 	background-color: #b3cbda;
-	border-bottom: #00abe1 3px solid;
+	border: #ffffff 3px solid;
 }
 
 /*Main in Page*/

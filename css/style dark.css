@@ -42,6 +42,7 @@ mark
 
 #container
 {
+	display: grid;
 	position: relative;
 	width: 80%;
 	margin-left: 10%;
@@ -501,6 +502,7 @@ mark
 	}
 	#container
 	{
+		display: grid;
 		margin-left: 2%;
 		margin-right: 2%;
 		width: 100%;

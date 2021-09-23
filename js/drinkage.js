@@ -18,7 +18,7 @@ function readTextFile(file)
 
 function prepareInstruction(instruction)
 {
-    instruction = instruction.replace('prsn',names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
+    instruction = instruction.replaceAll('prsn',names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
     console.log(instruction.match(/[^\[\]]+(?=\])/g))
     if (instruction.match(/[^\[\]]+(?=\])/g) != null)
     {

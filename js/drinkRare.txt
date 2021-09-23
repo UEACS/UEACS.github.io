@@ -29,9 +29,7 @@ Vote for the most mature person. They get to choose who drinks
 Show the last tab open on your browser
 Everyone who's single drinks
 All non-singles drink
-Drink if you're drinking beer
-Drink if you're drinking spirits
-Drink if you're drinking cider
+Drink if you're drinking [beer,spirits,cider]
 Do the alphabet backwards, if you mess up, drink twice. If you get it right, give out 3 sips.
 Person with the highest coursework mark drinks
 Name 3 cities in [France,Germany,Africa,Scotland,Italy,Spain,Wales,Ireland,Asia] or drink
@@ -43,3 +41,6 @@ Take a sip for every item you're wearing on your wrist
 Waterfall
 Last person who ate drinks
 What's the most embarrassing thing you've done whilst drunk
+Drink if your name starts with the letter ["A" - "H","I" - "Z"]
+Name what prsn is drinking or drink it
+Drink if you play a musical instrument

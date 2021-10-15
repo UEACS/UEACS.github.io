@@ -311,7 +311,7 @@ mark
 
 #percentImg
 {
-	height: 350px;
+	width: 100%;
 	position: left;
 }
 
@@ -499,6 +499,11 @@ mark
 		
 		text-align: left;
 		padding-top: 10px;
+	}
+	iframe
+	{
+		width: min-content;
+		height: min-content;
 	}
 	#container
 	{

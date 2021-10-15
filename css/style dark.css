@@ -558,9 +558,8 @@ mark
 	#logo img
 	{
 	position: static; 
-	left: 750;
-	top: 15;
 	height: 90px;
+	display: none;
 	}
 	header label
 	{

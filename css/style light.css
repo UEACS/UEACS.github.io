@@ -11,7 +11,7 @@ body {
 
 main
 {
-	padding: 5px;
+	/*padding: 5px;*/
 }
 
 mark {
@@ -151,9 +151,13 @@ mark
 		background-color: #b3cbda;
 		border: #00abe1 0px solid;
     }
+	.nav-text {
+		border: none;
+	}
 	.nav-text nav
 	{
 		background-color: #b3cbda;
+		width: 99%; /*Compensates for border*/
 	}
 }
 

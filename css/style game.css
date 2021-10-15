@@ -16,6 +16,27 @@ h2
 	font-size: small;
 }
 
+input
+{
+	width: 12.5%;
+}
+#persons
+{
+	width: 80%;
+	border: none;
+}
+
+.input-box
+{
+	width: 40%;
+	display: inline-flex;
+	background-color: white;
+	border: #00abe1 3px solid;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0;
+}
+
 .nav-text h1
 {
 	margin: 10px 0 0 0;

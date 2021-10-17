@@ -41,3 +41,16 @@ input
 {
 	margin: 10px 0 0 0;
 }
+
+.confirmed-box
+{
+	display: contents;
+	background-color: rgba(0, 0, 0, 0.212);
+	border-radius: 10px;
+}
+.confirmed-box img
+{
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}

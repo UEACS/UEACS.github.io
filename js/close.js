@@ -3,7 +3,7 @@ function closeParent()
     console.log('clicked');
     box.remove();
     console.log('closed');
-    localStorage.setItem('noticed','Server changes 2021');
+    localStorage.setItem('noticed','New admins');
 }
 
 const cross = document.querySelector('#notice-cross');
@@ -11,14 +11,14 @@ const box = document.querySelector('#floating-notice');
 //localStorage.setItem('noticed','false');
 //closeParent(); // When election is about to begin, remove this line
 
-if (localStorage.getItem('noticed')=='Server changes 2021')
+if (localStorage.getItem('noticed')=='New admins')
 {
     closeParent();
 }
 else
 {
-    box.querySelector("strong").innerHTML = "WARNING";
-    box.querySelector("p").innerHTML = "The discord server will be getting a big overhaul soon with changes to channels, organisation and policies. Many of these suggestions are being made by Jack Mawer so watch out. The admin team will likely implement the agreed upon changes this weekend!";
+    box.querySelector("strong").innerHTML = "New Admins Selected";
+    box.querySelector("p").innerHTML = "Arvy, Lukasz and Charlie have joined the admin team!";
     //var link = document.createElement("a");
     // link.href="admins.html";
     // link.innerHTML="<p>New Admins</p>";

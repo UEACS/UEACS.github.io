@@ -193,13 +193,14 @@ p
 
 q
 {
+	background-color: #262f35;
 	color: white;
 }
 
 a
 {
 	color: #00abe1;
-}
+}rgb(156, 151, 151)
 
 form
 {
@@ -232,6 +233,17 @@ main ul, ol
     width: 80%;
     margin: auto;
 	padding: 4px 2px 2px 20px;
+}
+
+q ul
+{
+	background: none;
+    border: none;
+	border-radius: none;
+    color: white;
+    width: inherit;
+    margin: auto;
+	padding: inherit;
 }
 
 .center

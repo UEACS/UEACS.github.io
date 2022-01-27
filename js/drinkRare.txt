@@ -24,7 +24,6 @@ Shout "Football's Coming Home"
 Wear an item of clothing backwards
 Youngest drinks
 Oldest drinks
-Vote for the most mature person. They get to choose who drinks
 Show the last tab open on your browser
 Everyone who's single drinks
 All non-singles drink
@@ -44,3 +43,5 @@ Drink if your name starts with the letter ["A" - "H","I" - "Z"]
 Name what prsn is drinking or drink it
 Drink if you [play a musical instrument,don't play a musical instrument]
 Show this to the other players. Another person must be selected by the other players to stand up. You must be blindfolded and guess who a person is using just your feet, if you do, everyone else drinks, if not, you drink!
+Carry out an exercise routine whilst staring furiously at prsn
+Imitate a [cow,chicken,frog,car,dog,cat,mentally unstable human being,]

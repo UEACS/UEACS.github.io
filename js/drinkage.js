@@ -33,7 +33,10 @@ function prepareInstruction(instruction)
 function nextCard()
 {
     console.log("Next card please");
-    if (Math.random()>0.55)
+    rand = Math.random()
+    chanceOfCommon = 0.5;
+    chanceOfUncommon = 0.25;
+    if (rand<chanceOfCommon)
     {
         // Common cards
         instruction = common[Math.floor(Math.random()*common.length)];
@@ -41,7 +44,7 @@ function nextCard()
         
         card.querySelector("p").innerHTML = instruction;
     }
-    else if(Math.random()>0.55)
+    else if(rand>chanceOfCommon+chanceOfUncommon)
     {
         // Uncommon cards
         instruction = uncommon[Math.floor(Math.random()*uncommon.length)];

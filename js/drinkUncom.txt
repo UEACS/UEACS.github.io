@@ -17,3 +17,4 @@ Drink everytime prsn drinks for the next round. If this is you, double up!
 Drink double for the next round
 Congratulations? Drink immunity for the next round ... but you must down your drink now!
 Stare off against prsn. Loser drinks
+Everyone drinking from a [can,glass,bottle] drinks

@@ -16,8 +16,27 @@ function readTextFile(file)
     rawFile.send(null);
 }
 
+function markPerson(button)
+{
+    let name = button.target.innerHTML;
+    markedPeople.push(name);
+    console.log(markedPeople);
+    card.innerHTML = "<p>Your job is done</p>";
+}
+
 function prepareInstruction(instruction)
 {
+    if (instruction.match(/^SPECIAL/g))
+    {
+        for (let person of names)
+        {
+            personButton = document.createElement("button");
+            personButton.innerHTML = person;
+            personButton.addEventListener("click",markPerson);
+            card.appendChild(personButton);
+        }
+        return instruction.substr("SPECIAL: ".length);
+    }
     instruction = instruction.replaceAll('prsn',names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
     console.log(instruction.match(/[^\[\]]+(?=\])/g))
     if (instruction.match(/[^\[\]]+(?=\])/g) != null)
@@ -36,7 +55,8 @@ function nextCard()
     rand = Math.random()
     chanceOfCommon = 0.5;
     chanceOfUncommon = 0.25;
-    if (rand<chanceOfCommon)
+    chanceOfAssasination = 0.01;
+    /*if (rand<chanceOfCommon)
     {
         // Common cards
         instruction = common[Math.floor(Math.random()*common.length)];
@@ -61,7 +81,11 @@ function nextCard()
 
         card.querySelector("p").innerHTML = instruction;
         rare.splice(index,1);
-    }
+    }*/
+    instruction = "SPECIAL: Mark a person. What happens with them will be decided at a later point...";
+    instruction = prepareInstruction(instruction);
+    
+    card.querySelector("p").innerHTML = instruction;
 }
 
 function addName()
@@ -92,6 +116,7 @@ const namesContainer = document.querySelector('#names');
 
 var instruction
 var names = [];
+var markedPeople = [];
 card.querySelector("p").innerHTML = "Welcome To Drinkage!";
 
 var text = "No cards found!";

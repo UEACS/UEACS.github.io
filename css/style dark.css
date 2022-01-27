@@ -219,6 +219,19 @@ input
 }
 
 
+button,.button,#next-button,#submit-button
+{
+	background-color: #00abe1;
+	border-style: none;
+	border-radius: 10px;
+	cursor: pointer;
+	width: min-content;
+	padding: 5px 30px 5px 30px;
+	margin: 5px;
+	margin-top: 5px;
+	display: inline-block;
+}
+
 .split
 {
 	margin: 15px 10px 15px 10px;
@@ -374,21 +387,7 @@ mark
 	padding: 2vh 0 0 0 ;
 }
 
-.button,.submit-button,#next-button
-{
-	background-color: #00abe1;
-	border-radius: 10px;
-	cursor: pointer;
-	width: min-content;
-}
 
-.button
-{
-	padding: 5px 30px 5px 30px;
-	margin: 5px;
-	margin-top: 5px;
-	display: inline-block;
-}
 
 #next-button
 {
@@ -396,7 +395,7 @@ mark
 	margin: auto;
 	margin-top: 5px;
 	padding: 10px 50px 10px 50px;
-	
+	display: block;
 	min-height: auto;
 	max-width: 7cm;
 	text-align: center;

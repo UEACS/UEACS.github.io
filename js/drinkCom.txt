@@ -12,3 +12,4 @@ Everyone studying the same subject as you drinks
 Everyone with [brown,green,blue] eyes drinks
 Everyone with [black,brown,blonde,ginger,dyed] hair drinks
 Say prsn's name, if someone replies before them, prsn drinks, otherwise they give out two sips
+SPECIAL: Mark a person. What happens with them will be decided at a later point...

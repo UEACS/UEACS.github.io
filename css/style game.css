@@ -16,10 +16,17 @@ h2
 	font-size: small;
 }
 
+form
+{
+	width: 100%;
+	max-width: 7cm;
+}
+
 input
 {
-	width: 12.5%;
+	width: 70%;
 }
+
 #persons
 {
 	width: 80%;

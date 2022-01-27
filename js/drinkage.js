@@ -53,10 +53,23 @@ function nextCard()
 {
     console.log("Next card please");
     rand = Math.random()
-    chanceOfCommon = 0.5;
+    chanceOfCommon = 0.6;
+    //chanceOfCommon = 1;
     chanceOfUncommon = 0.25;
-    chanceOfAssasination = 0.01;
-    /*if (rand<chanceOfCommon)
+    chanceOfAssasination = markedPeople.length/50; // Gets more likely to assinate the more targets there are
+    //chanceOfAssasination = markedPeople.length/1; // Gets more likely to assinate the more targets there are
+    if (rand<chanceOfAssasination)
+    {
+        // Assasinate card
+        for (let person of markedPeople)
+        {
+            instruction += person + "\n";
+        }
+        instruction += " must drink";
+        
+        card.querySelector("p").innerHTML = instruction;
+    }
+    else if (rand<chanceOfAssasination+chanceOfCommon)
     {
         // Common cards
         instruction = common[Math.floor(Math.random()*common.length)];
@@ -64,7 +77,7 @@ function nextCard()
         
         card.querySelector("p").innerHTML = instruction;
     }
-    else if(rand>chanceOfCommon+chanceOfUncommon)
+    else if(rand<chanceOfAssasination+chanceOfCommon+chanceOfUncommon)
     {
         // Uncommon cards
         instruction = uncommon[Math.floor(Math.random()*uncommon.length)];
@@ -81,11 +94,7 @@ function nextCard()
 
         card.querySelector("p").innerHTML = instruction;
         rare.splice(index,1);
-    }*/
-    instruction = "SPECIAL: Mark a person. What happens with them will be decided at a later point...";
-    instruction = prepareInstruction(instruction);
-    
-    card.querySelector("p").innerHTML = instruction;
+    }
 }
 
 function addName()
@@ -100,9 +109,10 @@ function addName()
 
         // Adds name to list and makes a new player card
         names.push(name);
-        var nameCard = document.createElement('div');
+        var nameCard = document.createElement("div"); // Not made a button so the cross can be added inside
         nameCard.classList.value = "button";
         nameCard.innerHTML = name;
+        // TODO: make cross button
 
         namesContainer.appendChild(nameCard);
     }

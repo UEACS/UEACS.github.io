@@ -18,3 +18,4 @@ Drink double for the next round
 Congratulations? Drink immunity for the next round ... but you must down your drink now!
 Stare off against prsn. Loser drinks
 Everyone drinking from a [can,glass,bottle] drinks
+SPECIAL: Mark a person. What happens with them will be decided at a later point...

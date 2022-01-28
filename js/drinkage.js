@@ -28,6 +28,7 @@ function prepareInstruction(instruction)
 {
     if (instruction.match(/^SPECIAL/g))
     {
+        console.log(names);
         for (let person of names)
         {
             personButton = document.createElement("button");
@@ -52,20 +53,21 @@ function prepareInstruction(instruction)
 function nextCard()
 {
     console.log("Next card please");
+    card.innerHTML = "<p>Loading card...</P>";
     rand = Math.random()
     chanceOfCommon = 0.6;
-    //chanceOfCommon = 1;
+    chanceOfCommon = 1;
     chanceOfUncommon = 0.25;
     chanceOfAssasination = markedPeople.length/50; // Gets more likely to assinate the more targets there are
-    //chanceOfAssasination = markedPeople.length/1; // Gets more likely to assinate the more targets there are
     if (rand<chanceOfAssasination)
     {
+        instruction = "";
         // Assasinate card
         for (let person of markedPeople)
         {
-            instruction += person + "\n";
+            instruction += person + "<br>";
         }
-        instruction += " must drink";
+        instruction += " must do what you tell them";
         
         card.querySelector("p").innerHTML = instruction;
     }

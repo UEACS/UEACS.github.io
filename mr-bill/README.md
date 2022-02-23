@@ -1,5 +1,4 @@
-# MR-Bill Web Version (In Development DO NOT USE)
-# Will be usable within a week!
+# MR-Bill Web Version (In Development MAY CONTAIN BUGS)
 A simple website for splitting bills from a receipt
 
 # To Use

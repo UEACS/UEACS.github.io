@@ -485,8 +485,6 @@ mark
 	#container
 	{
 		display: grid;
-		margin-left: 2%;
-		margin-right: 2%;
 		width: 100%;
 	}
 	header .nav-text
@@ -536,6 +534,7 @@ mark
 	#logo
 	{
 		left: 10px;
+		visibility: hidden;
 	}
 	#logo img
 	{

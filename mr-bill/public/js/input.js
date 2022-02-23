@@ -1,19 +1,24 @@
+// New Items
 const nameInput = document.querySelector('#name');
 const namesContainer = document.querySelector('#names');
 
-const newItemButton = document.querySelector("#new");
+const newItemButton = document.querySelector("#new-item");
 newItemButton.addEventListener("click", newItem);
 
-function personsUpdate()
+// New Aliases
+const aliasNameInput = document.querySelector('#name');
+const aliasNamesContainer = document.querySelector('#names');
+
+const newAliasButton = document.querySelector("#new-alias");
+newAliasButton.addEventListener("click", newAlias);
+
+function personsUpdate(event)
 {
     let text = this.value;
-    if (this.value.indexOf(",") != -1)
+    if (event.code === "Enter")
     {
-        if (text != "," || text != "") // Prevents blank names being added
+        if (text != "") // Prevents blank names being added
         {
-            let position = text.indexOf(",");
-            console.log(", found at position " + position);
-            text = text.substring(0, position)
             console.log("Text: "+text);
             addPersonBox.call(this,text);
         }
@@ -45,13 +50,14 @@ function removeElement(event) {
 /**
  * Add a new row to the list of items.
  */
-function newItem() {
+function newItem()
+{
     let newItemElm = document.createElement("div");
     newItemElm.className = "complete-item";
 
     newItemElm.innerHTML = `
-    <input type="currency" id="price" name="price" value="0" placeholder='0' onClick="this.select();" />
-    <input type=text id="name" name="name" placeholder="Item" onClick="this.select();" />
+    <input type="currency" id="price" name="price" value="£0.00" placeholder='0' />
+    <input type=text id="name" name="name" placeholder="Item"/>
     <div class="input-box">
         <input type=text id="persons" name="persons" placeholder="Person(s)" />
     </div>
@@ -62,5 +68,26 @@ function newItem() {
     newItemElm.querySelector("#remove-item").addEventListener("click", removeElement);
 
     document.querySelector("div #items").appendChild(newItemElm);
+    rescanCurrencyInputs();
+}
+
+function newAlias()
+{
+    console.log("clicked new alias");
+    let newItemElm = document.createElement("div");
+    newItemElm.className = "complete-item";
+
+    newItemElm.innerHTML = `
+    <input type=text id="alias-name" name="name" placeholder="Enter shortcut name"/>
+    <div class="input-box">
+        <input type=text id="persons" name="persons" placeholder="Person(s)" />
+    </div>
+    <img id="remove-item" src="media/Cross.png" />
+    `;
+
+    newItemElm.querySelector("#persons").addEventListener("keyup", personsUpdate);
+    newItemElm.querySelector("#remove-item").addEventListener("click", removeElement);
+
+    document.querySelector("div #alias-items").appendChild(newItemElm);
     rescanCurrencyInputs();
 }

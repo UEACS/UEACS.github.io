@@ -20,15 +20,15 @@ function personsUpdate(event)
         if (text != "") // Prevents blank names being added
         {
             console.log("Text: "+text);
-            addPersonBox.call(this,text);
+            addPersonBox.call(this);
         }
         this.value = ""; // Removes all text input as the name has been added
     }
 }
 
-function addPersonBox(text)
+function addPersonBox(event)
 {
-    text = text.replace(/^\s|\s$/g,''); // Removes spaces
+    text = this.value.replace(/^\s|\s$/g,''); // Removes spaces
     // Make new name item
     let newName = document.createElement("div");
     newName.className = "confirmed-box";
@@ -65,6 +65,7 @@ function newItem()
     `;
 
     newItemElm.querySelector("#persons").addEventListener("keyup", personsUpdate);
+    newItemElm.querySelector("#persons").addEventListener("submit", addPersonBox);
     newItemElm.querySelector("#remove-item").addEventListener("click", removeElement);
 
     document.querySelector("div #items").appendChild(newItemElm);
@@ -86,6 +87,7 @@ function newAlias()
     `;
 
     newItemElm.querySelector("#persons").addEventListener("keyup", personsUpdate);
+    newItemElm.querySelector("#persons").addEventListener("submit", addPersonBox);
     newItemElm.querySelector("#remove-item").addEventListener("click", removeElement);
 
     document.querySelector("div #alias-items").appendChild(newItemElm);

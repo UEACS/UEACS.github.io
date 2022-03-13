@@ -105,10 +105,13 @@ function processItems()
     totalBox.innerHTML = '';
 
     // Adds new results
+    let totalAmount = 0;
     for (let [person,amount] of Object.entries(people))
     {
         console.log(person + " added with £" + amount);
         addPerson(person,amount);
+        totalAmount += amount;
     }
 
+    document.querySelector('#total').querySelector('h2').innerHTML = "Total = " + totalAmount;
 }

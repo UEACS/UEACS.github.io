@@ -15,6 +15,8 @@ newAliasButton.addEventListener("click", newAlias);
 function personsUpdate(event)
 {
     let text = this.value;
+    console.log("Keycode: "+event.code);
+    newItemButton.innerHTML="Keycode: "+event.code;
     if (event.code === "Enter")
     {
         if (text != "") // Prevents blank names being added

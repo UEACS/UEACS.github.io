@@ -1,0 +1,150 @@
+@import "style dark.css";
+
+body
+{
+	background: radial-gradient(#004b79,#000);
+	min-height: min-content;
+}
+
+main
+{
+	margin-top: 0;
+}
+
+h2
+{
+	font-size: medium;
+}
+
+input
+{
+	width: 12.5%;
+	border-radius: 5px;
+}
+
+button {
+	border-radius: 5px;
+	background-color: rgba(255, 51, 0, 0.5);
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 10px;
+	margin: auto;
+	width: fit-content;
+	cursor: pointer;
+  }
+
+#persons
+{
+	width: 80%;
+	border: none;
+}
+
+.input-box
+{
+	width: 40%;
+	display: inline-flex;
+	background-color: white;
+	border: #00abe1 3px solid;
+	border-radius: 10px;
+	margin: 0;
+	padding: 0;
+	display: inline-table;
+}
+
+.nav-text h1
+{
+	margin: 10px 0 0 0;
+}
+
+.confirmed-box
+{
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.05);
+	margin: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#remove-item, #remove-person
+{
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+}
+
+.complete-item
+{
+	margin: 10px 0 10px 0;
+	padding: 5px;
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+}
+#new-item,#new-alias
+{
+	padding: 10px;
+	font-size: large;
+	color: white;
+	cursor: pointer;
+	background: rgba(84, 168, 0, 0.94);
+	text-align: center;
+}
+#new-alias
+{
+	background: #00abe1;
+}
+
+#process
+{
+	padding: 10px;
+	color: white;
+	cursor: pointer;
+	background: rgba(243, 146, 0, 0.94);
+	text-align: center;
+	border-radius: 5px;
+	margin: auto;
+	width: fit-content;
+	cursor: pointer;
+}
+#prcess:hover
+{
+	background: rgba(255, 158, 14, 0.781);
+}
+.card,.wide-card
+{
+	position: relative;
+	border: #00abe1 5px solid;
+	border-radius: 0.5cm;
+	/**
+	background-color: #00174d;
+	background-image: url("../media/pattern2.png");
+	background-size: 600px;
+	**/
+	margin: auto;
+	padding: 0.6cm;
+	min-height: 50vh;
+	max-width: 7cm;
+}
+.card p
+{
+	text-align: center;
+	color: #35424a;
+	font-size: large;
+	padding: 2vh 0 0 0 ;
+}
+.wide-card
+{
+	max-width: 70%;
+}
+
+#total,#groups
+{
+	min-height: 0;
+}
+
+
+.money
+{
+	float: right;
+}

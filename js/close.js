@@ -3,7 +3,7 @@ function closeParent()
     console.log('clicked');
     box.remove();
     console.log('closed');
-    localStorage.setItem('noticed','Racism');
+    localStorage.setItem('noticed','Redesign');
 }
 
 const cross = document.querySelector('#notice-cross');
@@ -11,14 +11,14 @@ const box = document.querySelector('#floating-notice');
 //localStorage.setItem('noticed','false');
 //closeParent(); // When election is about to begin, remove this line
 
-if (localStorage.getItem('noticed')=='Racism')
+if (localStorage.getItem('noticed')=='Redesign')
 {
     closeParent();
 }
 else
 {
-    box.querySelector("strong").innerHTML = "Feedback";
-    box.querySelector("p").innerHTML = "If you have any issues regarding how the server is ran, please talk to the admin team. Arun, Charis, Arvy and Jack are the most responsible but we are all here to help!";
+    box.querySelector("strong").innerHTML = "Website redesign";
+    box.querySelector("p").innerHTML = "This website will be getting a massive overhaul in its design and the apps page will become much more of a focus!";
     //var link = document.createElement("a");
     // link.href="admins.html";
     // link.innerHTML="<p>New Admins</p>";

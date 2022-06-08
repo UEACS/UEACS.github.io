@@ -38,7 +38,7 @@ function prepareInstruction(instruction)
         }
         return instruction.substr("SPECIAL: ".length);
     }
-    instruction = instruction.replaceAll('prsn',names[Math.floor(Math.random()*names.length)]) // Randomly put in players names to suitable marked positions
+    instruction = instruction.replaceAll('prsn',`<b>${names[Math.floor(Math.random()*names.length)]}</b>`) // Randomly put in players names to suitable marked positions
     console.log(instruction.match(/[^\[\]]+(?=\])/g))
     if (instruction.match(/[^\[\]]+(?=\])/g) != null)
     {
@@ -48,6 +48,25 @@ function prepareInstruction(instruction)
         instruction = instruction.replace(/\[([^}]*)\]/g,options[Math.floor(Math.random()*options.length)])
     }
     return instruction;
+}
+
+function formatNamesList(list)
+{
+
+    if (list.length > 1)
+    {
+        sentence = "";
+        for (let x=0; x<list.length-2; x++)
+        {
+            sentence += `<b>${list[x]}</b>, `;
+        }
+        sentence += `<b>${list[list.length-2]}</b> and <b>${list[list.length-1]}</b>`;
+        return sentence;
+    }
+    else
+    {
+        return `<b>${list[0]}</b>`;
+    }
 }
 
 function nextCard()
@@ -62,12 +81,43 @@ function nextCard()
     if (rand<chanceOfAssasination)
     {
         instruction = "";
-        // Assasinate card
-        for (let person of markedPeople)
+        // Assasinate card selector
+        let multipleMarkedPeople = [...new Set(markedPeople.filter((item, index) => markedPeople.indexOf(item) != index))];
+        // Multiple pick task (when people are selected multiple times)
+        if (multipleMarkedPeople.length > 0)
         {
-            instruction += person + "<br>";
+            if (multipleMarkedPeople.length == 1)
+            {
+                instruction = `<b>${multipleMarkedPeople[0]}</b> was selected multiple times so must down their drinks!`;
+            }
+            else
+            {
+                instruction += formatNamesList(multipleMarkedPeople);
+                /*for (let person of multipleMarkedPeople)
+                {
+                    instruction += `<b>${person}</b><br>`;
+                }*/
+                instruction += " were selected multiple times so must down their drink!";
+            }
         }
-        instruction += " must do what you tell them";
+        else
+        {
+            // Standard task
+            if (markedPeople.length == 1)
+            {
+                instruction = `<b>${markedPeople[0]}</b> must do a dance for 20 seconds`;
+            }
+            else
+            {
+                instruction += formatNamesList(markedPeople);
+                /*for (let person of markedPeople)
+                {
+                    instruction += `<b>${person}</b><br>`;
+                }*/
+                instruction += " must do a 30 second dance together";
+            }
+        }
+        markedPeople = []; // Resets marked people
         
         card.querySelector("p").innerHTML = instruction;
     }

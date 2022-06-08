@@ -370,7 +370,7 @@ mark
 .card
 {
 	position: relative;
-	border: red 5px solid;
+	border: red 5px outset;
 	border-radius: 0.5cm;
 	background-color: white;
 	background-image: url("../media/pattern.png");
@@ -378,6 +378,7 @@ mark
 	padding: 0.6cm;
 	min-height: 50vh;
 	max-width: 7cm;
+	box-shadow: 3px 3px 5px black;
 }
 .card p
 {

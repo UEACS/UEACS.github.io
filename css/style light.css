@@ -149,15 +149,12 @@ h1, h2, h3, h4
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.88);
   color: rgb(255, 155, 0);
   border-radius: 10px;
   padding: 0px 40px;
   box-shadow: 0px 0px 5px 0px #797979;
   position: sticky;
   top: 0;
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
 }
 
 .page-title {
@@ -256,6 +253,12 @@ input[type=checkbox]:checked + .switch-vis
 }
 
 /* General Classes */
+.transparent
+{
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+	background-color: rgba(255, 255, 255, 0.88);;
+}
 
 mark
 {
@@ -273,6 +276,33 @@ mark
 .highlight
 {
   color: #3E73DE;
+}
+
+.pp,.arun-pp
+{
+  width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+/* IDs */
+#floating-notice
+{
+	box-shadow: 0px 0px 5px 0px #797979;
+	border-radius: 20px;
+	bottom: 20px;
+	padding: 20px 20px 5px 20px;
+	position: sticky;
+	z-index: 1;
+	display:block;
+	width: 60%;
+	margin: auto;
+}
+#floating-notice img
+{
+	float: right;
+	cursor: pointer;
+  width: auto;
 }
 
 @media (max-width: 800px)

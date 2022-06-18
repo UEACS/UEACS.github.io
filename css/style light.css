@@ -208,6 +208,32 @@ h1, h2, h3, h4
   border-radius: 10px;
 }
 
+/* End Navigation */
+
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+
+form label {
+  display: flex;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+form input {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border: 1px solid gray;
+  border-radius: 6px;
+  outline: none;
+}
+input[type="button"]:hover{
+  box-shadow: 0px 0px 5px 0px #797979;
+  cursor: pointer;
+}
+
 /* Switch */
 .switch-container
 {
@@ -283,6 +309,20 @@ mark
   width: 40px;
 	height: 40px;
 	border-radius: 50%;
+}
+
+.submit-button
+{
+	padding: auto;
+	background-color: transparent;
+	border: none;
+	background-image: url("https://ueacs.co.uk/media/arrow.png");
+	background-size: contain;
+	background-repeat: round;
+	width: 30px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .preview-box
@@ -370,40 +410,4 @@ mark
   .navbar-links.active {
       display: flex;
   }
-}
-/* End Navigation */
-
-form {
-  width: 300px;
-  margin-left: 20px;
-}
-
-form label {
-  display: flex;
-  margin-top: 20px;
-  font-size: 18px;
-}
-
-form input {
-  width: 100%;
-  padding: 7px;
-  border: none;
-  border: 1px solid gray;
-  border-radius: 6px;
-  outline: none;
-}
-input[type="button"] {
-  width: 320px;
-  height: 35px;
-  margin-top: 20px;
-  border: none;
-  background-color: rgb(255, 155, 0);;
-  color: white;
-  font-size: 18px;
-  
-}
-
-input[type="button"]:hover{
-  box-shadow: 0px 0px 5px 0px #797979;
-  cursor: pointer;
 }

@@ -22,20 +22,6 @@ main
     /**margin-top: 160px;**/
 }
 
-footer
-{
-	position: relative;
-	padding-top: 5px;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	border-top: #00abe1 3px solid;
-	color: white;
-	font-size: 0.6em;
-	text-align: center;
-	margin-top: 20px;
-}
-
 mark
 {
 	background: #361999;
@@ -261,19 +247,6 @@ mark
 	background-color: #35424a;
 	color: #d3d3d3;
 	border: #d3d3d3 4px solid;
-	border-radius: 20px;
-	bottom: 20px;
-	padding: 20px 20px 0px 20px;
-	position: sticky;
-	z-index: 1;
-	display:block;
-	width: 60%;
-	margin: auto;
-}
-#floating-notice img
-{
-	float: right;
-	cursor: pointer;
 }
 
 .card

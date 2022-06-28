@@ -22,7 +22,7 @@ form
 	max-width: 7cm;
 }
 
-button
+button .button
 {
 	color: white;
 	box-shadow: 2px 2px 2px black;

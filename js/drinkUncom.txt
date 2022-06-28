@@ -21,3 +21,5 @@ Everyone drinking from a [can,glass,bottle] drinks
 SPECIAL: Mark a person. What happens with them will be decided at a later point...
 Anyone here with a partner, drink
 Ask [prsn,the person on your left,the person on your right] who the hottest character is in a film/tv series of your choice
+Ask the group to name your favourite [music artist,tv show,film]. If anyone guesses correctly, drink. If no one does, everyone else drinks.
+Create a new rule for the game.

@@ -43,6 +43,16 @@ mark
 	min-height: 12vh; /* 17 is deafult */
 }
 
+h1
+{
+	color: white;
+}
+
+.highlight
+{
+	color: #00abe1;
+}
+
 /*Header*/
 header
 {
@@ -93,7 +103,7 @@ header label
 }
 .navbar-links li a
 {
-	color: #00abe1;
+	color: #ffffff;
 }
 
 .nav-text
@@ -379,150 +389,11 @@ mark
 	color: #00abe1;
 }
 /** Mobile Devices **/
-@media only screen and (max-width:768px)
+@media (max-width: 800px)
 {
-	body
-	{
-		padding: 10px;
-		display: block;
-		background-color: #35424a;
-	}
 	main
 	{
-		display: block;
 		width: 100%;
-		border: none;
-		padding: 0;
-		/**margin-top: 69px;**/
-
+		box-shadow: none;
 	}
-	footer
-	{
-		position: relative;
-		padding-top: .05cm;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		background-color: transparent;
-		color: white;
-		font-size: 12px;
-		text-align: center;
-	}
-	p
-	{
-		
-		text-align: left;
-		padding-top: 10px;
-	}
-	iframe
-	{
-		width: min-content;
-		height: min-content;
-	}
-	#container
-	{
-		display: grid;
-		margin-left: 2%;
-		margin-right: 2%;
-		width: 100%;
-	}
-	header .nav-text
-	{
-		position: sticky;
-		display: inline-block;
-		width: 90%;
-		margin-right: 8.5%;
-	}
-
-	.nav-text h1 {
-		float: right;
-		padding-right: 2.5vw;
-	}
-
-	.nav-text nav
-	{
-		margin: auto;
-		width: 100%;
-		padding: 0px 0px 0px 5px;
-	}
-	.nav-text nav ul
-	{
-		padding: 0;
-		margin: auto;
-		text-align: center;
-	}
-	.nav-text nav li
-	{
-		padding: 0px 8px 0px 8px;
-		display: inline-block;
-		float: none;
-		background-color: #262f35;
-		border-radius: 5px;
-		margin: 3px;
-	}
-	#vertical-nav
-	{
-		width: max-content;
-	}
-	#vertical-nav li
-	{
-		padding: 10px;
-		line-height: 6vh;
-	}
-	#logo
-	{
-		left: 10px;
-	}
-	#logo img
-	{
-	position: static; 
-	height: 90px;
-	display: none;
-	}
-	header label
-	{
-		float: right;
-	}
-	div .nav-text
-	{
-		font-size: 0.4cm;
-	}
-	#info-card{
-	margin:auto;
-	border-radius: 0.5cm;
-	background-color: white;
-	padding: 5px;
-	margin-top: 105px;
-	min-height: auto;
-	display: block;
-	}
-}
-
-/*For smaller mobile displays*/
-@media only all and (max-width:250px)
-{
-	p, main li{
-		font-size: 5.5vw;
-	}
-
-	h1{
-		/*display :none;*/
-		font-size: 12vw;
-	}
-
-	h2{
-		font-size: 8.5vw;
-	}
-
-	#logo img
-	{
-	height: 70px;
-	}
-
-	main{
-		margin-top: 73px;
-	}
-
-
-
 }

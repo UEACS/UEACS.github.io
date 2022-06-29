@@ -17,9 +17,12 @@ body
 
 main
 {
-    width: 56%;
-    margin: auto;
-    /**margin-top: 160px;**/
+	box-shadow: 0px 0px 5px 0px #000;
+}
+
+footer
+{
+	color: white;
 }
 
 mark
@@ -88,7 +91,7 @@ header label
 {
 	color: white;
 }
-.nav-text nav a:hover
+.navbar-links li a
 {
 	color: #00abe1;
 }
@@ -96,6 +99,12 @@ header label
 .nav-text
 {
 	background-color: #35424adb;
+}
+
+.transparent
+{
+	background-color: #35424adb;
+	box-shadow: 0px 0px 5px 0px #000;
 }
 
 .youtube-vid
@@ -108,12 +117,12 @@ header label
 
 h2
 {
-	color: #3E73DE;
+	color: #00abe1;
 }
 
 h3
 {
-	color: #3E73DE;
+	color: #00abe1;
 }
 
 
@@ -134,6 +143,12 @@ a
 {
 	color: #00abe1;
 	/*rgb(156, 151, 151);*/
+}
+a:hover
+{
+  text-decoration: none;
+  text-shadow: 0px 0px 1px #000000;
+  font-size: 16px;
 }
 
 form

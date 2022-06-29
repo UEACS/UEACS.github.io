@@ -1,3 +1,50 @@
+#page-container {
+  position: relative;
+  min-height: calc(100vh - 16px); /*Takes default margin into account*/
+}
+
+#content-wrap {
+  padding-bottom: 3.5rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+footer a
+{
+  margin: 0px 5px;
+  color: #6c6b6b;
+}
+
+main
+{
+  padding: 40px;
+  box-shadow: 0px 0px 5px 0px #797979;
+  border-radius: 10px;
+  text-align: left;
+  margin: 10px auto 20px auto;
+  width: 60%;
+}
+
+main article
+{
+  padding: 10px 40px;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+html {
+  font-family: sans-serif;
+  color: #363636;
+}
+
+
+
 h1
 {
   text-align: left;
@@ -84,45 +131,6 @@ span
 main img
 {
   width: 100%;
-}
-
-main
-{
-  padding: 40px;
-  box-shadow: 0px 0px 5px 0px #797979;
-  border-radius: 10px;
-  text-align: left;
-  margin: 10px auto 20px auto;
-  width: 60%;
-}
-
-main article
-{
-  padding: 10px 40px;
-  background: rgba(0, 0, 0, 0.06);
-}
-
-html {
-  font-family: sans-serif;
-  color: #363636;
-}
-
-footer
-{
-  clear: both;
-  margin: auto;
-  bottom: 0;
-  height: min-content;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.88);
-}
-
-footer a
-{
-  margin: 0px 5px;
-  color: #6c6b6b;
 }
 
 h1, h2, h3, h4
@@ -333,6 +341,13 @@ mark
   width: 20em;
   height: 20em;
   border-radius: 3px;
+  transition: all 200ms;
+}
+.preview-box:hover
+{
+  box-shadow: 0px 0px 5px 2px #6babd2;
+  width: 20.5em;
+  height: 20.5em;
 }
 .preview-box img
 {

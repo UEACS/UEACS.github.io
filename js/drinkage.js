@@ -74,8 +74,8 @@ function nextCard()
     console.log("Next card please");
     card.innerHTML = "<p>Loading card...</P>";
     rand = Math.random()
-    chanceOfCommon = 0.6;
-    chanceOfUncommon = 0.25;
+    chanceOfCommon = 0.7;
+    chanceOfUncommon = 0.2;
     chanceOfAssasination = markedPeople.length/50; // Gets more likely to assinate the more targets there are
     if (rand<chanceOfAssasination)
     {

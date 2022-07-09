@@ -87,7 +87,7 @@ function nextCard()
         {
             if (multipleMarkedPeople.length == 1)
             {
-                instruction = `<b>${multipleMarkedPeople[0]}</b> was selected multiple times so must down their drinks!`;
+                instruction = `<b>${multipleMarkedPeople[0]}</b> was selected multiple times so must down their drink!`;
             }
             else
             {
@@ -96,7 +96,7 @@ function nextCard()
                 {
                     instruction += `<b>${person}</b><br>`;
                 }*/
-                instruction += " were selected multiple times so must down their drink!";
+                instruction += " were selected multiple times so must down their drinks!";
             }
         }
         else

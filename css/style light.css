@@ -398,7 +398,7 @@ mark
 {
   main
   {
-    width: 100%;
+    width: 95%;
     padding: 0;
     box-shadow: none;
   }
@@ -424,8 +424,20 @@ mark
       flex-direction: column;
   }
 
-  .navbar-links ul li {
+  .navbar-links ul li
+  {
       text-align: center;
+      border-radius: 5px;
+      margin: 3px 0;
+  }
+
+  .navbar-links ul li:nth-child(2n-1)
+  {
+      background-color: rgb(249, 249, 249);
+  }
+  .navbar-links ul li:nth-child(2n)
+  {
+      background-color: rgb(236, 236, 236);
   }
 
   .navbar-links ul li a {

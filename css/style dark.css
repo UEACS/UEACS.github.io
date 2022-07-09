@@ -391,4 +391,17 @@ mark
 /** Mobile Devices **/
 @media (max-width: 800px)
 {
+	main
+	{
+		box-shadow: none;
+	}
+
+	.navbar-links ul li:nth-child(2n-1)
+	{
+		background-color: #1F292F;
+	}
+	.navbar-links ul li:nth-child(2n)
+	{
+		background-color: #131a1d;
+	}
 }

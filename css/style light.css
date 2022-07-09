@@ -360,6 +360,7 @@ mark
 }
 .preview-box img
 {
+  width: 100%;
   height: 100%;
 }
 .preview-box a

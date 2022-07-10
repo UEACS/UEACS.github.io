@@ -101,6 +101,12 @@ header label
 {
 	color: white;
 }
+
+.navbar-links li:hover
+{
+	background-color: #ffffff0f;
+}
+
 .navbar-links li a
 {
 	color: #ffffff;

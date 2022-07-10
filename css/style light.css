@@ -43,8 +43,6 @@ html {
   color: #363636;
 }
 
-
-
 h1
 {
   text-align: left;
@@ -60,7 +58,6 @@ a
 a:hover
 {
   text-decoration: none;
-  text-shadow: 1px 1px 1px #c5c5c5;
 }
 
 form
@@ -168,28 +165,39 @@ h1
   top: 0;
 }
 
-.page-title {
+.page-title
+{
   font-size: 1.5rem;
   margin: .5rem;
   font-weight: bold;
   max-width: 80%;
 }
 
-.navbar-links {
+.navbar-links
+{
   height: 100%;
 }
 
-.navbar-links ul {
+.navbar-links ul
+{
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.navbar-links li {
+.navbar-links li
+{
   list-style: none;
+  border-radius: 10px;
 }
 
-.navbar-links li a {
+.navbar-links li:hover
+{
+  background-color: #35424a0f;
+}
+
+.navbar-links li a
+{
   display: block;
   text-decoration: none;
   color: #6babd2;

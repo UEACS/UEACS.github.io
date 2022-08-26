@@ -28,15 +28,22 @@ function prepareInstruction(instruction)
 {
     if (instruction.match(/^SPECIAL/g))
     {
-        console.log(names);
-        for (let person of names)
+        if (instruction.match(/Guess/g))
         {
-            personButton = document.createElement("button");
-            personButton.innerHTML = person;
-            personButton.addEventListener("click",markPerson);
-            card.appendChild(personButton);
+            return "This really shouldn't have happened. Take a sip for breaking the game!";
         }
-        return instruction.substr("SPECIAL: ".length);
+        else // Goes to original SPECIAL card
+        {
+            console.log(names);
+            for (let person of names)
+            {
+                personButton = document.createElement("button");
+                personButton.innerHTML = person;
+                personButton.addEventListener("click",markPerson);
+                card.appendChild(personButton);
+            }
+            return instruction.substr("SPECIAL: ".length);
+        }
     }
     instruction = instruction.replaceAll('prsn',`<b>${names[Math.floor(Math.random()*names.length)]}</b>`) // Randomly put in players names to suitable marked positions
     console.log(instruction.match(/[^\[\]]+(?=\])/g))
@@ -183,17 +190,17 @@ card.querySelector("p").innerHTML = "Welcome To Drinkage!";
 var text = "No cards found!";
 
 
-readTextFile("https://ueacs.co.uk/js/drinkCom.txt");
+readTextFile("https://ueacs.co.uk/Drinkage/drinkCom.txt");
 
 //console.log("Common:"+text);
 var common = text.split('\n');
 
-readTextFile("https://ueacs.co.uk/js/drinkUncom.txt");
+readTextFile("https://ueacs.co.uk/Drinkage/drinkUncom.txt");
 
 //console.log("Uncommon:"+text);
 var uncommon = text.split('\n');
 
-readTextFile("https://ueacs.co.uk/js/drinkRare.txt");
+readTextFile("https://ueacs.co.uk/Drinkage/drinkRare.txt");
 
 //console.log("Rare:"+text);
 var rare = text.split('\n');

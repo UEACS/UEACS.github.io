@@ -23,6 +23,7 @@ function specialCompleteScreen()
 
 function showRandomPunishment()
 {
+    card.innerHTML = "<p></p>";
     // Punishment cards
     instruction = punishments[Math.floor(Math.random()*punishments.length)];
     instruction = prepareInstruction(instruction);

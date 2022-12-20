@@ -16,21 +16,53 @@ function readTextFile(file)
     rawFile.send(null);
 }
 
+function specialCompleteScreen()
+{
+    card.innerHTML = "<p>Your job is done</p>";
+}
+
+function showRandomPunishment()
+{
+    card.innerHTML = "<p></p>";
+    // Punishment cards
+    instruction = punishments[Math.floor(Math.random()*punishments.length)];
+    instruction = prepareInstruction(instruction);
+    
+    card.querySelector("p").innerHTML = instruction;
+}
+
 function markPerson(button)
 {
     let name = button.target.innerHTML;
     markedPeople.push(name);
     console.log(markedPeople);
-    card.innerHTML = "<p>Your job is done</p>";
+    specialCompleteScreen();
 }
 
 function prepareInstruction(instruction)
 {
     if (instruction.match(/^SPECIAL/g))
     {
+        instruction = instruction.substr("SPECIAL: ".length);
         if (instruction.match(/Guess/g))
         {
             return "This really shouldn't have happened. Take a sip for breaking the game!";
+        }
+        else if (instruction.match(/^Make a choice./g))
+        {
+            console.log("Creating special \"Make a choice\" card");
+            
+            drinkButton = document.createElement("button");
+            drinkButton.innerHTML = "Finish";
+            drinkButton.addEventListener("click",specialCompleteScreen);
+            card.appendChild(drinkButton);
+
+            punishmentButton = document.createElement("button");
+            punishmentButton.innerHTML = "Random";
+            punishmentButton.addEventListener("click",showRandomPunishment);
+            card.appendChild(punishmentButton);
+
+            return instruction;
         }
         else // Goes to original SPECIAL card
         {
@@ -42,7 +74,7 @@ function prepareInstruction(instruction)
                 personButton.addEventListener("click",markPerson);
                 card.appendChild(personButton);
             }
-            return instruction.substr("SPECIAL: ".length);
+            return instruction;
         }
     }
     instruction = instruction.replaceAll('prsn',`<b>${names[Math.floor(Math.random()*names.length)]}</b>`) // Randomly put in players names to suitable marked positions
@@ -81,7 +113,7 @@ function nextCard()
     console.log("Next card please");
     card.innerHTML = "<p>Loading card...</P>";
     rand = Math.random()
-    chanceOfCommon = 0.6;
+    chanceOfCommon = 0.45;
     chanceOfUncommon = 0.25;
     chanceOfAssasination = markedPeople.length/50; // Gets more likely to assinate the more targets there are
     if (rand<chanceOfAssasination)
@@ -190,19 +222,24 @@ card.querySelector("p").innerHTML = "Welcome To Drinkage!";
 var text = "No cards found!";
 
 
-readTextFile("https://ueacs.co.uk/Drinkage/drinkCom.txt");
+readTextFile("https://ueacs.co.uk/Drinkage/common.txt");
 
 //console.log("Common:"+text);
-var common = text.split('\n');
+const common = text.split('\n');
 
-readTextFile("https://ueacs.co.uk/Drinkage/drinkUncom.txt");
+readTextFile("https://ueacs.co.uk/Drinkage/uncommon.txt");
 
 //console.log("Uncommon:"+text);
-var uncommon = text.split('\n');
+const uncommon = text.split('\n');
 
-readTextFile("https://ueacs.co.uk/Drinkage/drinkRare.txt");
+readTextFile("https://ueacs.co.uk/Drinkage/rare.txt");
 
 //console.log("Rare:"+text);
-var rare = text.split('\n');
+const rare = text.split('\n');
+
+readTextFile("https://ueacs.co.uk/Drinkage/punishments.txt");
+
+//console.log("Rare:"+text);
+const punishments = text.split('\n');
 
 nextButton.addEventListener("click", nextCard);

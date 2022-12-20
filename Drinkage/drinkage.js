@@ -1,3 +1,5 @@
+recentNames = []
+
 function readTextFile(file)
 {
     var rawFile = new XMLHttpRequest();
@@ -77,7 +79,20 @@ function prepareInstruction(instruction)
             return instruction;
         }
     }
-    instruction = instruction.replaceAll('prsn',`<b>${names[Math.floor(Math.random()*names.length)]}</b>`) // Randomly put in players names to suitable marked positions
+    // Reduces chance of the same name being picked too much
+    selectedPrsn = names[Math.floor(Math.random()*names.length)];
+    if (recentNames.includes(selectedPrsn))
+    {
+        selectedPrsn = names[Math.floor(Math.random()*names.length)];
+    }
+    if (recentNames.length > names.length/2)
+    {
+        recentNames.pop();
+    }
+    recentNames.unshift(selectedPrsn);
+    console.log(`Recent names: ${recentNames}`);
+
+    instruction = instruction.replaceAll('prsn',`<b>${selectedPrsn}</b>`) // Randomly put in players names to suitable marked positions
     console.log(instruction.match(/[^\[\]]+(?=\])/g))
     if (instruction.match(/[^\[\]]+(?=\])/g) != null)
     {

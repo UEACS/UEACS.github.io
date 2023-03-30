@@ -3,7 +3,7 @@ function closeParent()
     console.log('clicked');
     box.remove();
     console.log('closed');
-    localStorage.setItem('noticed','Redesigning');
+    localStorage.setItem('noticed','Paused');
 }
 
 const cross = document.querySelector('#notice-cross');
@@ -11,17 +11,14 @@ const box = document.querySelector('#floating-notice');
 //localStorage.setItem('noticed','false');
 //closeParent(); // When election is about to begin, remove this line
 
-if (localStorage.getItem('noticed')=='Redesigning')
+if (localStorage.getItem('noticed')=='Paused')
 {
     closeParent();
 }
 else
 {
-    box.querySelector("strong").innerHTML = "Redesign in progress...";
-    box.querySelector("p").innerHTML = "This website is getting a massive overhaul in its design and the apps page will become much more of a focus!";
-    //var link = document.createElement("a");
-    // link.href="admins.html";
-    // link.innerHTML="<p>New Admins</p>";
-    // box.appendChild(link);
+    box.querySelector("strong").innerHTML = "Work On Pause";
+    box.querySelector("p").innerHTML = "The website has been redesigned but there seem to be a few bugs. Unfortunately, improving this website is not a priority to us right now but please enjoy the read and the apps that work!";
+
     cross.addEventListener("click", closeParent);
 }

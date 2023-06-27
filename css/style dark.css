@@ -306,9 +306,9 @@ mark
 #next-button
 {
 	position: relative;
-	margin: auto;
+	margin: 10px auto;
 	margin-top: 5px;
-	padding: 10px 50px 10px 50px;
+	padding: 10px 50px;
 	display: block;
 	min-height: auto;
 	max-width: 7cm;

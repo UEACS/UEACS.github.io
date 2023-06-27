@@ -111,7 +111,7 @@ button {
 	width: fit-content;
 	cursor: pointer;
 }
-#prcess:hover
+#process:hover
 {
 	background: rgba(255, 158, 14, 0.781);
 }
@@ -147,8 +147,42 @@ button {
 	min-height: 0;
 }
 
-
 .money
 {
 	float: right;
+}
+
+/** Mobile Devices **/
+@media only screen and (max-width:768px)
+{
+	body
+	{
+		padding: 0;
+	}
+
+	input
+	{
+		width: 18%;
+		margin: 0;
+	}
+
+	.card, .wide-card
+	{
+		padding: 0.6cm 5px;
+		border-top: #00abe1 5px solid;
+		border-left: none;
+		border-right: none;
+		border-radius: 0px;
+	}
+
+	.wide-card
+	{
+		max-width: none;
+		min-height: 20vh;
+	}
+
+	#process
+	{
+		position: revert;
+	}
 }

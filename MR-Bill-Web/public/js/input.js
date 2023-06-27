@@ -26,7 +26,7 @@ function personsUpdate(event)
     }
 }
 
-function addPersonBox(event)
+function addPersonBox(event) // Only acts on front end. All people read on process
 {
     text = this.value.replace(/^\s|\s$/g,''); // Removes spaces
     // Make new name item
@@ -36,7 +36,7 @@ function addPersonBox(event)
         <a>Person</a>
         <img id="remove-person" src="media/Cross.png" />
     `;
-    newName.querySelector("a").innerHTML = text;
+    newName.querySelector("a").textContent = text;
     newName.querySelector("#remove-person").addEventListener("click", removeElement);
     this.parentElement.appendChild(newName);
 }

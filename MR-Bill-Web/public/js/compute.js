@@ -4,7 +4,7 @@ let aliasItemsDiv = document.querySelector("#alias-items");
 processButton.addEventListener("click",processItems);
 let aliases = {}
 
-function identifyAliases()
+function identifyAliases() // Reads all groups into dictionary
 {
     // Makes alias dictionary
     aliases = {}
@@ -42,7 +42,7 @@ function addPerson(person,amount)
 
 function processItems()
 {
-    console.log("Starting processing");
+    console.log("Starting processing 1");
     identifyAliases();
     console.log(aliases);
     const itemContainer = document.querySelector("#items");
@@ -63,8 +63,9 @@ function processItems()
             peopleInput.value = '';
         }
 
+
         // Unpacks aliases
-        let currentName = "";
+        /*let currentName = "";
         for (let person of peopleContainer.children)
         {
             if (person.nodeName != "INPUT")
@@ -74,21 +75,34 @@ function processItems()
                 {
                     for (let person of aliases[currentName])
                     {
-                        addPersonBox.call(peopleInput,person); // Unpacks alias
+                        addPerson(peopleInput,person); // Unpacks alias
                     }
-                    person.remove();
+                    //person.remove();
                 }
             }
-        }
+        }*/
         
         // Processes people and prices of item
         
         var peopleNames = [];
-        for (let person of peopleContainer.children)
+        for (let payer of peopleContainer.children)
         {
-            if (person.nodeName != "INPUT")
+            if (payer.nodeName != "INPUT")
             {
-                peopleNames.push(person.querySelector("a").textContent);
+                const pName = payer.querySelector("a").textContent;
+                console.log(`${pName} in aliases (${JSON.stringify(aliases)})? ${pName in aliases}`);
+                if (pName in aliases)
+                {
+                    console.log(`Alias found for item of price: £${price}`);
+                    for (let person of aliases[pName])
+                    {
+                        peopleNames.push(person); // Unpacks alias
+                    }
+                }
+                else
+                {
+                    peopleNames.push(pName);
+                }
             }
         }
         console.log("People for the item: "+peopleNames);
@@ -101,6 +115,7 @@ function processItems()
             people[person] = people[person] + parseFloat(price)/peopleNames.length;
         }
     }
+
     // Remove previous results before new ones added
     totalBox.innerHTML = '';
 

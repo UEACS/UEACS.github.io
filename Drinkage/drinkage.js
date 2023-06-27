@@ -201,7 +201,6 @@ function nextCard()
     {
         // Common cards
         instruction = common[Math.floor(Math.random()*common.length)];
-        instruction = "SPECIAL: Waterfall relay"; // TODO: REMOVE THIS. ONLY FOR TESTING
         instruction = prepareInstruction(instruction);
         
         card.querySelector("p").innerHTML = instruction;

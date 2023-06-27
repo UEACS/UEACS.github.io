@@ -206,23 +206,40 @@ function addName()
 {
     // Gets name value and clears field
     console.log("Adding player");
-    var name = nameInput.value;
+    var name = nameInput.value.replace(/^\s|\s$/g,''); // Removes spaces;
     if (name != "")
     {
         nameInput.value = "";
         console.log(name);
 
         // Adds name to list and makes a new player card
-        names.push(name);
+        /*names.push(name);
         var nameCard = document.createElement("div"); // Not made a button so the cross can be added inside
         nameCard.classList.value = "button";
         nameCard.innerHTML = name;
-        // TODO: make cross button
+        */
+       // Make new name item
+        let newName = document.createElement("div");
+        newName.className = "confirmed-box";
+        newName.innerHTML = `
+            <a>Person</a>
+            <img id="remove-person" src="media/Cross.png" />
+        `;
+        newName.querySelector("a").textContent = name;
+        newName.querySelector("#remove-person").addEventListener("click", removeElement);
 
-        namesContainer.appendChild(nameCard);
+        namesContainer.appendChild(newName);
+        names.push(name);
     }
 }
 
+function removeElement(event) {
+    let item = event.currentTarget.parentElement;
+    nameValue = item.querySelector("a").textContent;
+    item.remove();
+    names = names.filter(n => n != nameValue);
+    console.log("Item removed");
+}
 
 const nextButton = document.querySelector('#next-button');
 const card = document.querySelector('.card');

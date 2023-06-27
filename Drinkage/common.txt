@@ -1,5 +1,5 @@
 Take a drink young Skywalker
-Give out [1,2,3] sips
+Give out [2,3,4] sips
 Categories (Name a category and go around the group naming different items in that category until someone repeats or can't answer. They must drink)
 Rhyme (Say a word and go around the group saying words that rhyme with it until someone repeats or can't answer. They must drink)
 [Boys,Girls,Straights,Non-straights] drink
@@ -13,3 +13,4 @@ Everyone with [brown,green,blue] eyes drinks
 Everyone with [black,brown,blonde,ginger,dyed] hair drinks
 Say prsn's name, if someone replies before them, prsn drinks, otherwise they give out two sips
 SPECIAL: Mark a person. What happens with them will be decided at a later point...
+Make up a rule for the next round

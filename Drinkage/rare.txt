@@ -46,7 +46,7 @@ Show this to the other players and walk out the room... Another person must be s
 Do ten sit-ups whilst staring furiously at prsn
 Imitate a [sexy cow,chicken,frog,car,dog,cat,mentally unstable human being,unenthusiastic bumble bee] until the next round
 Rank everyone's [hair,clothes,knees,choice of drink]
-Get everyone to put their hand up if their favourite colour is [blue,purple,orange,red,green,yellow]. Everyone with their hand up drinks.
+Get everyone to put their hand up if their favourite colour is [blue,purple,orange,red,green,yellow]. Everyone with their hand [up,down] drinks.
 Swap drinks with prsn
 You've got one minute to do an impression of [a cow,a pig,a cat,a dog,a giraffe,an elephant,a gorilla,a snake,a gangsta,a robot,a stripper,prsn]. If no one guesses what or who you are in that minute, drink.
 If your drink is more than half full, fix that.
@@ -54,3 +54,15 @@ Go around the room naming the most disgusting thing you can think of. Choose the
 Paranoia. Whisper a question to the person to your right where the answer has to be someone playing the game. They must answer by pointing at that person. If a player gets pointed at, they can take a drink if they want to know the question.
 Tell a joke. If no one laughs or smiles, take a sip.
 Anyone [wearing,not wearing] glasses must drink
+The floor is lava. If anyone touches the floor for the next round, they must drink.
+Everyone drinks for as many [pericings,tatoos] they have.
+Everyone drinks as many times as they have names (including middle names)
+Anyone wearing makeup drinks.
+Say what you fear most or take a drink.
+Twins. Choose the two most similar looking people. They can both give out 3 sips.
+The shortest player must stand up for the next round.
+Ask the person to your left a [science,geography,history] question. If they get the answer right, you must drink. If they answer incorrectly, they must drink.
+Unattended liquids. The next person who wants to leave the room, must finish their drink first!
+Make a drink for prsn. If they can guess what the drink is, you must finish it, otherwise they must.
+Tell everyone your first impression of prsn.
+Player with the weakest drink must take a sip.

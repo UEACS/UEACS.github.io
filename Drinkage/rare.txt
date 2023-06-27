@@ -66,3 +66,4 @@ Unattended liquids. The next person who wants to leave the room, must finish the
 Make a drink for prsn. If they can guess what the drink is, you must finish it, otherwise they must.
 Tell everyone your first impression of prsn.
 Player with the weakest drink must take a sip.
+SPECIAL: Waterfall relay

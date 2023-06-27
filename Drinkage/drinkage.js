@@ -66,6 +66,29 @@ function prepareInstruction(instruction)
 
             return instruction;
         }
+        else if (instruction.match(/^Waterfall relay/g))
+        {
+            console.log("Creating special \"Waterfall relay\" card");
+            
+            drinkButton = document.createElement("button");
+            drinkButton.innerHTML = "Give out 5 sips";
+            drinkButton.addEventListener("click",specialCompleteScreen);
+            card.appendChild(drinkButton);
+
+            relayButton = document.createElement("button");
+            relayButton.innerHTML = "Waterfall relay";
+            relayButton.addEventListener("click",function(){
+                card.innerHTML = "<p></p>";
+                // Waterfall relay activated!
+                instruction = "<i>Looks like you want everyone to hate you...</i><br>Divide the room into two teams. Each person in a team must finish their drink before the next person starts. Last team to finish all their drinks loses and must do a shot each.";
+                instruction = prepareInstruction(instruction);
+                
+                card.querySelector("p").innerHTML = instruction;
+            });
+            card.appendChild(relayButton);
+
+            return "Choose one of the following:<br><span style='color:red;'>(Waterfall Relay is deadly)</span>";
+        }
         else // Goes to original SPECIAL card
         {
             console.log(names);
@@ -178,6 +201,7 @@ function nextCard()
     {
         // Common cards
         instruction = common[Math.floor(Math.random()*common.length)];
+        instruction = "SPECIAL: Waterfall relay"; // TODO: REMOVE THIS. ONLY FOR TESTING
         instruction = prepareInstruction(instruction);
         
         card.querySelector("p").innerHTML = instruction;

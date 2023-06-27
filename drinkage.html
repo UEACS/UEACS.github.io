@@ -23,7 +23,7 @@
    </header>
 
    <main>
-      <h2>Drinkage 1.4.3</h2>
+      <h2>Drinkage 1.4.4</h2>
       <div class="card">
          <p>Null</p>
       </div>
@@ -36,10 +36,10 @@
          
       </div>
 
-      <form>
+      <form onsubmit="addName()" id="name-form">
          <input type=text id="name" name="name" placeholder="Enter new name">
 
-         <input type=button class="submit-button" name="submit" onclick="addName()">
+         <input type=submit class="submit-button" name="submit" onclick="addName()">
       </form>
 
       <div id="floating-notice">

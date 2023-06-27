@@ -245,6 +245,8 @@ const nextButton = document.querySelector('#next-button');
 const card = document.querySelector('.card');
 const nameInput = document.querySelector('#name');
 const namesContainer = document.querySelector('#names');
+const nameForm = document.querySelector("#name-form");
+nameForm.addEventListener("submit",function(e){e.preventDefault();});
 
 var instruction
 var names = [];

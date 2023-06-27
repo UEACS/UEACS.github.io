@@ -23,3 +23,4 @@ Ask [prsn,the person on your left,the person on your right] who the hottest char
 Ask the group to name your favourite [music artist,tv show,film]. If anyone guesses correctly, drink. If no one does, everyone else drinks.
 Create a new rule for the game.
 Everyone who's single drinks
+Act out a meme of your choice. If no one guesses it, everyone must drink.

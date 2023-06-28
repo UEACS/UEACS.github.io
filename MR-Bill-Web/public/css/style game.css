@@ -13,7 +13,7 @@ main
 
 h2
 {
-	font-size: medium;
+	font-size: 20px;
 }
 
 input
@@ -118,13 +118,9 @@ button {
 .card,.wide-card
 {
 	position: relative;
-	border: #00abe1 5px solid;
+	border: #00abe1 1px solid;
 	border-radius: 0.5cm;
-	/**
-	background-color: #00174d;
-	background-image: url("../media/pattern2.png");
-	background-size: 600px;
-	**/
+	background-color: #ffffff08;
 	margin: auto;
 	padding: 0.6cm;
 	min-height: 50vh;
@@ -140,6 +136,7 @@ button {
 .wide-card
 {
 	max-width: 70%;
+	margin-top: 10px;
 }
 
 #total,#groups
